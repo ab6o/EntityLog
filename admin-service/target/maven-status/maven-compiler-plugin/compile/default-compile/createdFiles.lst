@@ -1,0 +1,8 @@
+io/debezium/demos/auditing/admin/AuditData.class
+io/debezium/demos/auditing/admin/VegetableEvent.class
+io/debezium/demos/auditing/admin/SourceData.class
+io/debezium/demos/auditing/admin/TransactionData.class
+io/debezium/demos/auditing/admin/wih/SendTransactionEventWIHandler.class
+io/debezium/demos/auditing/admin/TransactionEvent.class
+io/debezium/demos/auditing/admin/VegetableData.class
+io/debezium/demos/auditing/admin/service/AdminService.class

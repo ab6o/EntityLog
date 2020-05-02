@@ -1,0 +1,12 @@
+io/debezium/demos/auditing/vegetables/transactioncontext/TransactionContextData.class
+io/debezium/demos/auditing/orders/model/PurchaseOrder.class
+io/debezium/demos/auditing/orders/service/PurchaseOrderService.class
+io/debezium/demos/auditing/vegetables/transactioncontext/TransactionInterceptor.class
+io/debezium/demos/auditing/vegetables/service/VegetableService.class
+io/debezium/demos/auditing/orders/model/PurchaseOrderLine.class
+io/debezium/demos/auditing/vegetables/rest/util/ErrorMapper.class
+io/debezium/demos/auditing/orders/resource/PurchaseOrderResource.class
+io/debezium/demos/auditing/vegetables/rest/VegetableResource.class
+io/debezium/demos/auditing/vegetables/model/Vegetable.class
+io/debezium/demos/auditing/vegetables/transactioncontext/Audited.class
+io/debezium/demos/auditing/orders/service/PurchaseOrderLineService.class
