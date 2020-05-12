@@ -71,14 +71,14 @@ Method deploy_0 : V
     ALOAD 7
     AASTORE
     ALOAD 1
-    LDC (String) "proxykey66"
+    LDC (String) "proxykey65"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 12
+    ASTORE 10
     ALOAD 2
     LDC (Integer) 2
     AALOAD
-    ASTORE 10
+    ASTORE 11
     LDC (String) "NORMAL"
     // Method descriptor: (Ljava/lang/String;)Lio/quarkus/runtime/LaunchMode;
     INVOKESTATIC io/quarkus/runtime/LaunchMode#valueOf
@@ -91,32 +91,32 @@ Method deploy_0 : V
     ALOAD 2
     LDC (Integer) 4
     AALOAD
-    ASTORE 11
+    ASTORE 12
     ALOAD 2
     LDC (Integer) 0
     AALOAD
-    ASTORE 14
-    ALOAD 14
+    ASTORE 13
+    ALOAD 13
     CHECKCAST io/quarkus/vertx/runtime/VertxRecorder
-    ALOAD 12
-    CHECKCAST java/util/function/Supplier
     ALOAD 10
+    CHECKCAST java/util/function/Supplier
+    ALOAD 11
     CHECKCAST java/util/Map
     ALOAD 9
     ALOAD 8
     CHECKCAST io/quarkus/runtime/ShutdownContext
-    ALOAD 11
+    ALOAD 12
     CHECKCAST java/util/Map
     // Method descriptor: (Ljava/util/function/Supplier;Ljava/util/Map;Lio/quarkus/runtime/LaunchMode;Lio/quarkus/runtime/ShutdownContext;Ljava/util/Map;)V
     INVOKEVIRTUAL io/quarkus/vertx/runtime/VertxRecorder#configureVertx
     ALOAD 1
-    LDC (String) "proxykey66"
+    LDC (String) "proxykey65"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 13
-    ALOAD 14
-    CHECKCAST io/quarkus/vertx/runtime/VertxRecorder
+    ASTORE 14
     ALOAD 13
+    CHECKCAST io/quarkus/vertx/runtime/VertxRecorder
+    ALOAD 14
     CHECKCAST java/util/function/Supplier
     // Method descriptor: (Ljava/util/function/Supplier;)Lio/quarkus/runtime/RuntimeValue;
     INVOKEVIRTUAL io/quarkus/vertx/runtime/VertxRecorder#forceStart

@@ -63,8 +63,8 @@ Method deploy_0 : V
     ALOAD 2
     LDC (Integer) 0
     AALOAD
-    ASTORE 13
-    ALOAD 13
+    ASTORE 11
+    ALOAD 11
     CHECKCAST io/quarkus/arc/runtime/ArcRecorder
     ALOAD 4
     CHECKCAST io/quarkus/runtime/ShutdownContext
@@ -90,7 +90,7 @@ Method deploy_0 : V
     AALOAD
     ASTORE 7
     ALOAD 1
-    LDC (String) "proxykey105"
+    LDC (String) "proxykey109"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
     ASTORE 8
@@ -263,22 +263,22 @@ Method deploy_0 : V
     LDC (String) "proxykey125"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 11
+    ASTORE 13
     ALOAD 2
     LDC (Integer) 2
     AALOAD
-    ASTORE 14
+    ASTORE 12
     ALOAD 2
     LDC (Integer) 4
     AALOAD
-    ASTORE 12
-    ALOAD 13
-    CHECKCAST io/quarkus/arc/runtime/ArcRecorder
+    ASTORE 14
     ALOAD 11
+    CHECKCAST io/quarkus/arc/runtime/ArcRecorder
+    ALOAD 13
     CHECKCAST io/quarkus/arc/ArcContainer
-    ALOAD 14
-    CHECKCAST java/util/List
     ALOAD 12
+    CHECKCAST java/util/List
+    ALOAD 14
     CHECKCAST java/util/Collection
     // Method descriptor: (Lio/quarkus/arc/ArcContainer;Ljava/util/List;Ljava/util/Collection;)Lio/quarkus/arc/runtime/BeanContainer;
     INVOKEVIRTUAL io/quarkus/arc/runtime/ArcRecorder#initBeanContainer

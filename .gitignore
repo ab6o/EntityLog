@@ -1,3 +1,1 @@
-vegetables-service/target/
-.gitignore
-log-enricher/target/
+*.class

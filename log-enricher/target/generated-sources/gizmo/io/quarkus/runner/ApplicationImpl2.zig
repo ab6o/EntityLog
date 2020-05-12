@@ -27,13 +27,13 @@ Method <clinit> : V
     // (no arguments)
 ) {
     ** label1
-    LDC (String) "io.netty.allocator.maxOrder"
-    LDC (String) "1"
+    LDC (String) "java.util.logging.manager"
+    LDC (String) "org.jboss.logmanager.LogManager"
     // Method descriptor: (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     INVOKESTATIC java/lang/System#setProperty
     POP
-    LDC (String) "java.util.logging.manager"
-    LDC (String) "org.jboss.logmanager.LogManager"
+    LDC (String) "io.netty.allocator.maxOrder"
+    LDC (String) "1"
     // Method descriptor: (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     INVOKESTATIC java/lang/System#setProperty
     POP
@@ -48,42 +48,34 @@ Method <clinit> : V
     // Field descriptor: Lio/quarkus/runtime/StartupContext;
     PUTSTATIC io/quarkus/runner/ApplicationImpl2#STARTUP_CONTEXT
     ** label2
-    NEW io/quarkus/deployment/steps/LoggingResourceProcessor$setupLoggingStaticInit39
+    NEW io/quarkus/deployment/steps/LoggingResourceProcessor$setupLoggingStaticInit43
     DUP
     // Method descriptor: ()V
-    INVOKESPECIAL io/quarkus/deployment/steps/LoggingResourceProcessor$setupLoggingStaticInit39#<init>
+    INVOKESPECIAL io/quarkus/deployment/steps/LoggingResourceProcessor$setupLoggingStaticInit43#<init>
     CHECKCAST io/quarkus/runtime/StartupTask
     ALOAD 0
     // Method descriptor: (Lio/quarkus/runtime/StartupContext;)V
     INVOKEINTERFACE io/quarkus/runtime/StartupTask#deploy
-    NEW io/quarkus/deployment/steps/KafkaStreamsProcessor$processBuildTimeConfig37
+    NEW io/quarkus/deployment/steps/KafkaStreamsProcessor$processBuildTimeConfig45
     DUP
     // Method descriptor: ()V
-    INVOKESPECIAL io/quarkus/deployment/steps/KafkaStreamsProcessor$processBuildTimeConfig37#<init>
+    INVOKESPECIAL io/quarkus/deployment/steps/KafkaStreamsProcessor$processBuildTimeConfig45#<init>
     CHECKCAST io/quarkus/runtime/StartupTask
     ALOAD 0
     // Method descriptor: (Lio/quarkus/runtime/StartupContext;)V
     INVOKEINTERFACE io/quarkus/runtime/StartupTask#deploy
-    NEW io/quarkus/deployment/steps/NettyProcessor$createExecutors40
+    NEW io/quarkus/deployment/steps/NettyProcessor$createExecutors47
     DUP
     // Method descriptor: ()V
-    INVOKESPECIAL io/quarkus/deployment/steps/NettyProcessor$createExecutors40#<init>
+    INVOKESPECIAL io/quarkus/deployment/steps/NettyProcessor$createExecutors47#<init>
     CHECKCAST io/quarkus/runtime/StartupTask
     ALOAD 0
     // Method descriptor: (Lio/quarkus/runtime/StartupContext;)V
     INVOKEINTERFACE io/quarkus/runtime/StartupTask#deploy
-    NEW io/quarkus/deployment/steps/VertxCoreProcessor$ioThreadDetector47
+    NEW io/quarkus/deployment/steps/VertxCoreProcessor$ioThreadDetector37
     DUP
     // Method descriptor: ()V
-    INVOKESPECIAL io/quarkus/deployment/steps/VertxCoreProcessor$ioThreadDetector47#<init>
-    CHECKCAST io/quarkus/runtime/StartupTask
-    ALOAD 0
-    // Method descriptor: (Lio/quarkus/runtime/StartupContext;)V
-    INVOKEINTERFACE io/quarkus/runtime/StartupTask#deploy
-    NEW io/quarkus/deployment/steps/BlockingOperationControlBuildStep$blockingOP51
-    DUP
-    // Method descriptor: ()V
-    INVOKESPECIAL io/quarkus/deployment/steps/BlockingOperationControlBuildStep$blockingOP51#<init>
+    INVOKESPECIAL io/quarkus/deployment/steps/VertxCoreProcessor$ioThreadDetector37#<init>
     CHECKCAST io/quarkus/runtime/StartupTask
     ALOAD 0
     // Method descriptor: (Lio/quarkus/runtime/StartupContext;)V
@@ -96,6 +88,14 @@ Method <clinit> : V
     ALOAD 0
     // Method descriptor: (Lio/quarkus/runtime/StartupContext;)V
     INVOKEINTERFACE io/quarkus/runtime/StartupTask#deploy
+    NEW io/quarkus/deployment/steps/BlockingOperationControlBuildStep$blockingOP51
+    DUP
+    // Method descriptor: ()V
+    INVOKESPECIAL io/quarkus/deployment/steps/BlockingOperationControlBuildStep$blockingOP51#<init>
+    CHECKCAST io/quarkus/runtime/StartupTask
+    ALOAD 0
+    // Method descriptor: (Lio/quarkus/runtime/StartupContext;)V
+    INVOKEINTERFACE io/quarkus/runtime/StartupTask#deploy
     NEW io/quarkus/deployment/steps/SubstrateSystemPropertiesBuildStep$writeNativeProps53
     DUP
     // Method descriptor: ()V
@@ -104,10 +104,10 @@ Method <clinit> : V
     ALOAD 0
     // Method descriptor: (Lio/quarkus/runtime/StartupContext;)V
     INVOKEINTERFACE io/quarkus/runtime/StartupTask#deploy
-    NEW io/quarkus/deployment/steps/RuntimeBeanProcessor$build48
+    NEW io/quarkus/deployment/steps/RuntimeBeanProcessor$build49
     DUP
     // Method descriptor: ()V
-    INVOKESPECIAL io/quarkus/deployment/steps/RuntimeBeanProcessor$build48#<init>
+    INVOKESPECIAL io/quarkus/deployment/steps/RuntimeBeanProcessor$build49#<init>
     CHECKCAST io/quarkus/runtime/StartupTask
     ALOAD 0
     // Method descriptor: (Lio/quarkus/runtime/StartupContext;)V
@@ -120,10 +120,10 @@ Method <clinit> : V
     ALOAD 0
     // Method descriptor: (Lio/quarkus/runtime/StartupContext;)V
     INVOKEINTERFACE io/quarkus/runtime/StartupTask#deploy
-    NEW io/quarkus/deployment/steps/ResteasyCommonProcessor$setupResteasyInjection55
+    NEW io/quarkus/deployment/steps/ResteasyCommonProcessor$setupResteasyInjection57
     DUP
     // Method descriptor: ()V
-    INVOKESPECIAL io/quarkus/deployment/steps/ResteasyCommonProcessor$setupResteasyInjection55#<init>
+    INVOKESPECIAL io/quarkus/deployment/steps/ResteasyCommonProcessor$setupResteasyInjection57#<init>
     CHECKCAST io/quarkus/runtime/StartupTask
     ALOAD 0
     // Method descriptor: (Lio/quarkus/runtime/StartupContext;)V
@@ -159,13 +159,13 @@ Method doStart : V
     arg 1 = [Ljava/lang/String;
 ) {
     ** label1
-    LDC (String) "io.netty.allocator.maxOrder"
-    LDC (String) "1"
+    LDC (String) "java.util.logging.manager"
+    LDC (String) "org.jboss.logmanager.LogManager"
     // Method descriptor: (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     INVOKESTATIC java/lang/System#setProperty
     POP
-    LDC (String) "java.util.logging.manager"
-    LDC (String) "org.jboss.logmanager.LogManager"
+    LDC (String) "io.netty.allocator.maxOrder"
+    LDC (String) "1"
     // Method descriptor: (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     INVOKESTATIC java/lang/System#setProperty
     POP
@@ -179,14 +179,6 @@ Method doStart : V
     ** label2
     // Method descriptor: ()V
     INVOKESTATIC io/quarkus/runtime/generated/RunTimeConfig#getRunTimeConfiguration
-    NEW io/quarkus/deployment/steps/NettyProcessor$eagerlyInitClass38
-    DUP
-    // Method descriptor: ()V
-    INVOKESPECIAL io/quarkus/deployment/steps/NettyProcessor$eagerlyInitClass38#<init>
-    CHECKCAST io/quarkus/runtime/StartupTask
-    ALOAD 2
-    // Method descriptor: (Lio/quarkus/runtime/StartupContext;)V
-    INVOKEINTERFACE io/quarkus/runtime/StartupTask#deploy
     NEW io/quarkus/deployment/steps/LoggingResourceProcessor$setupLoggingRuntimeInit42
     DUP
     // Method descriptor: ()V
@@ -203,6 +195,14 @@ Method doStart : V
     ALOAD 2
     // Method descriptor: (Lio/quarkus/runtime/StartupContext;)V
     INVOKEINTERFACE io/quarkus/runtime/StartupTask#deploy
+    NEW io/quarkus/deployment/steps/NettyProcessor$eagerlyInitClass38
+    DUP
+    // Method descriptor: ()V
+    INVOKESPECIAL io/quarkus/deployment/steps/NettyProcessor$eagerlyInitClass38#<init>
+    CHECKCAST io/quarkus/runtime/StartupTask
+    ALOAD 2
+    // Method descriptor: (Lio/quarkus/runtime/StartupContext;)V
+    INVOKEINTERFACE io/quarkus/runtime/StartupTask#deploy
     NEW io/quarkus/deployment/steps/VertxHttpProcessor$cors46
     DUP
     // Method descriptor: ()V
@@ -211,26 +211,26 @@ Method doStart : V
     ALOAD 2
     // Method descriptor: (Lio/quarkus/runtime/StartupContext;)V
     INVOKEINTERFACE io/quarkus/runtime/StartupTask#deploy
-    NEW io/quarkus/deployment/steps/ThreadPoolSetup$createExecutor45
+    NEW io/quarkus/deployment/steps/ThreadPoolSetup$createExecutor40
     DUP
     // Method descriptor: ()V
-    INVOKESPECIAL io/quarkus/deployment/steps/ThreadPoolSetup$createExecutor45#<init>
+    INVOKESPECIAL io/quarkus/deployment/steps/ThreadPoolSetup$createExecutor40#<init>
     CHECKCAST io/quarkus/runtime/StartupTask
     ALOAD 2
     // Method descriptor: (Lio/quarkus/runtime/StartupContext;)V
     INVOKEINTERFACE io/quarkus/runtime/StartupTask#deploy
-    NEW io/quarkus/deployment/steps/VertxCoreProcessor$eventLoopCount43
+    NEW io/quarkus/deployment/steps/VertxCoreProcessor$eventLoopCount41
     DUP
     // Method descriptor: ()V
-    INVOKESPECIAL io/quarkus/deployment/steps/VertxCoreProcessor$eventLoopCount43#<init>
+    INVOKESPECIAL io/quarkus/deployment/steps/VertxCoreProcessor$eventLoopCount41#<init>
     CHECKCAST io/quarkus/runtime/StartupTask
     ALOAD 2
     // Method descriptor: (Lio/quarkus/runtime/StartupContext;)V
     INVOKEINTERFACE io/quarkus/runtime/StartupTask#deploy
-    NEW io/quarkus/deployment/steps/VertxCoreProcessor$buildWeb41
+    NEW io/quarkus/deployment/steps/VertxCoreProcessor$buildWeb39
     DUP
     // Method descriptor: ()V
-    INVOKESPECIAL io/quarkus/deployment/steps/VertxCoreProcessor$buildWeb41#<init>
+    INVOKESPECIAL io/quarkus/deployment/steps/VertxCoreProcessor$buildWeb39#<init>
     CHECKCAST io/quarkus/runtime/StartupTask
     ALOAD 2
     // Method descriptor: (Lio/quarkus/runtime/StartupContext;)V
@@ -243,18 +243,18 @@ Method doStart : V
     ALOAD 2
     // Method descriptor: (Lio/quarkus/runtime/StartupContext;)V
     INVOKEINTERFACE io/quarkus/runtime/StartupTask#deploy
-    NEW io/quarkus/deployment/steps/ConfigBuildStep$validateConfigProperties56
+    NEW io/quarkus/deployment/steps/ConfigBuildStep$validateConfigProperties55
     DUP
     // Method descriptor: ()V
-    INVOKESPECIAL io/quarkus/deployment/steps/ConfigBuildStep$validateConfigProperties56#<init>
+    INVOKESPECIAL io/quarkus/deployment/steps/ConfigBuildStep$validateConfigProperties55#<init>
     CHECKCAST io/quarkus/runtime/StartupTask
     ALOAD 2
     // Method descriptor: (Lio/quarkus/runtime/StartupContext;)V
     INVOKEINTERFACE io/quarkus/runtime/StartupTask#deploy
-    NEW io/quarkus/deployment/steps/VertxCoreProcessor$build57
+    NEW io/quarkus/deployment/steps/VertxCoreProcessor$build56
     DUP
     // Method descriptor: ()V
-    INVOKESPECIAL io/quarkus/deployment/steps/VertxCoreProcessor$build57#<init>
+    INVOKESPECIAL io/quarkus/deployment/steps/VertxCoreProcessor$build56#<init>
     CHECKCAST io/quarkus/runtime/StartupTask
     ALOAD 2
     // Method descriptor: (Lio/quarkus/runtime/StartupContext;)V

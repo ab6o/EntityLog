@@ -27,7 +27,7 @@ Method registerClass72 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionSynchronizationRegistryImple"
+    LDC (String) "org.hibernate.type.EnumType"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -435,7 +435,7 @@ Method registerClass28 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "[Lorg.hibernate.event.spi.AutoFlushEventListener;"
+    LDC (String) "sun.security.rsa.RSASignature$MD2withRSA"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -446,11 +446,11 @@ Method registerClass28 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
+    ASTORE 3
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
+    ASTORE 4
     LDC (Integer) 1
     ANEWARRAY java/lang/Class
     ASTORE 1
@@ -464,6 +464,14 @@ Method registerClass28 : V
     ALOAD 2
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 3
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    LDC (Boolean) false
+    ALOAD 4
+    // Method descriptor: (Z[Ljava/lang/reflect/Field;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ** label3
     GOTO label4
@@ -486,7 +494,7 @@ Method registerClass16 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "io.netty.channel.socket.nio.NioServerSocketChannel"
+    LDC (String) "[Lorg.hibernate.event.spi.LoadEventListener;"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -745,7 +753,7 @@ Method registerClass84 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "io.agroal.pool.ConnectionHandler"
+    LDC (String) "com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionSynchronizationRegistryImple"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1106,7 +1114,7 @@ Method registerClass29 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "[Lorg.hibernate.event.spi.DirtyCheckEventListener;"
+    LDC (String) "java.security.interfaces.RSAPublicKey"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1117,11 +1125,11 @@ Method registerClass29 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
+    ASTORE 3
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
+    ASTORE 4
     LDC (Integer) 1
     ANEWARRAY java/lang/Class
     ASTORE 1
@@ -1135,6 +1143,14 @@ Method registerClass29 : V
     ALOAD 2
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 3
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    LDC (Boolean) false
+    ALOAD 4
+    // Method descriptor: (Z[Ljava/lang/reflect/Field;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ** label3
     GOTO label4
@@ -1157,7 +1173,7 @@ Method registerClass17 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "io.quarkus.vertx.core.runtime.VertxLogDelegateFactory"
+    LDC (String) "org.postgresql.Driver"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1318,7 +1334,7 @@ Method registerClass85 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "io.agroal.api.security.AgroalDefaultSecurityProvider"
+    LDC (String) "org.hibernate.hql.internal.ast.tree.MethodNode"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1424,7 +1440,7 @@ Method registerClass73 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "com.fasterxml.jackson.module.jaxb.JaxbAnnotationIntrospector"
+    LDC (String) "org.hibernate.tool.hbm2ddl.MultipleLinesSqlCommandExtractor"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1435,7 +1451,7 @@ Method registerClass73 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    ASTORE 3
+    POP
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
@@ -1451,10 +1467,6 @@ Method registerClass73 : V
     // Method descriptor: ([Ljava/lang/Class;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    ALOAD 3
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
@@ -1836,7 +1848,7 @@ Method registerClass18 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "[Lorg.hibernate.event.spi.InitializeCollectionEventListener;"
+    LDC (String) "[Lorg.hibernate.event.spi.ResolveNaturalIdEventListener;"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1993,7 +2005,7 @@ Method registerClass86 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "io.agroal.api.security.AgroalKerberosSecurityProvider"
+    LDC (String) "org.hibernate.hql.internal.ast.tree.AbstractStatement"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2099,7 +2111,7 @@ Method registerClass74 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "com.fasterxml.jackson.databind.ser.std.SqlDateSerializer"
+    LDC (String) "org.hibernate.hql.internal.ast.HqlToken"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2110,7 +2122,7 @@ Method registerClass74 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    ASTORE 3
+    POP
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
@@ -2126,10 +2138,6 @@ Method registerClass74 : V
     // Method descriptor: ([Ljava/lang/Class;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    ALOAD 3
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
@@ -2468,7 +2476,7 @@ Method registerClass19 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "[Lorg.hibernate.event.spi.SaveOrUpdateEventListener;"
+    LDC (String) "org.glassfish.json.JsonProviderImpl"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2570,7 +2578,7 @@ Method registerClass87 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "[Ljava.sql.Statement;"
+    LDC (String) "org.hibernate.hql.internal.ast.tree.EntityJoinFromElement"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2676,7 +2684,7 @@ Method registerClass75 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl"
+    LDC (String) "org.hibernate.hql.internal.ast.tree.Node"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2982,7 +2990,7 @@ Method registerClass7 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.util.TreeSet"
+    LDC (String) "java.util.LinkedHashMap"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -3186,7 +3194,7 @@ Method registerClass88 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.sql.Statement"
+    LDC (String) "[Lio.agroal.pool.ConnectionHandler;"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -3237,7 +3245,7 @@ Method registerClass76 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.hibernate.id.enhanced.SequenceStyleGenerator"
+    LDC (String) "com.fasterxml.jackson.module.jaxb.JaxbAnnotationIntrospector"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -3248,7 +3256,7 @@ Method registerClass76 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
+    ASTORE 3
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
@@ -3264,6 +3272,10 @@ Method registerClass76 : V
     // Method descriptor: ([Ljava/lang/Class;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 3
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
@@ -3543,7 +3555,7 @@ Method registerClass40 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "sun.security.rsa.RSASignature$SHA224withRSA"
+    LDC (String) "[Lorg.hibernate.event.spi.AutoFlushEventListener;"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -3554,11 +3566,11 @@ Method registerClass40 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    ASTORE 3
+    POP
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    ASTORE 4
+    POP
     LDC (Integer) 1
     ANEWARRAY java/lang/Class
     ASTORE 1
@@ -3572,14 +3584,6 @@ Method registerClass40 : V
     ALOAD 2
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    ALOAD 3
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    LDC (Boolean) false
-    ALOAD 4
-    // Method descriptor: (Z[Ljava/lang/reflect/Field;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ** label3
     GOTO label4
@@ -3661,7 +3665,7 @@ Method registerClass6 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.util.TreeMap"
+    LDC (String) "io.netty.channel.socket.nio.NioServerSocketChannel"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -3763,7 +3767,7 @@ Method registerClass89 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.sql.ResultSet"
+    LDC (String) "io.agroal.pool.ConnectionHandler"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -3814,7 +3818,7 @@ Method registerClass77 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl"
+    LDC (String) "com.fasterxml.jackson.databind.ser.std.SqlDateSerializer"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -3825,7 +3829,7 @@ Method registerClass77 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
+    ASTORE 3
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
@@ -3841,6 +3845,10 @@ Method registerClass77 : V
     // Method descriptor: ([Ljava/lang/Class;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 3
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
@@ -4018,7 +4026,7 @@ Method registerClass5 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.util.LinkedHashSet"
+    LDC (String) "io.netty.channel.socket.nio.NioSocketChannel"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -4171,7 +4179,7 @@ Method registerClass41 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "sun.security.rsa.RSASignature$SHA256withRSA"
+    LDC (String) "[Lorg.hibernate.event.spi.DirtyCheckEventListener;"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -4182,11 +4190,11 @@ Method registerClass41 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    ASTORE 3
+    POP
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    ASTORE 4
+    POP
     LDC (Integer) 1
     ANEWARRAY java/lang/Class
     ASTORE 1
@@ -4200,14 +4208,6 @@ Method registerClass41 : V
     ALOAD 2
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    ALOAD 3
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    LDC (Boolean) false
-    ALOAD 4
-    // Method descriptor: (Z[Ljava/lang/reflect/Field;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ** label3
     GOTO label4
@@ -4340,7 +4340,7 @@ Method registerClass9 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "com.github.benmanes.caffeine.cache.SSMSA"
+    LDC (String) "java.util.HashMap"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -4442,7 +4442,7 @@ Method registerClass78 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl"
+    LDC (String) "org.hibernate.hql.internal.ast.tree.SelectClause"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -4697,7 +4697,7 @@ Method registerClass42 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "sun.security.rsa.RSASignature$SHA384withRSA"
+    LDC (String) "[Lorg.hibernate.event.spi.FlushEntityEventListener;"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -4708,11 +4708,11 @@ Method registerClass42 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    ASTORE 3
+    POP
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    ASTORE 4
+    POP
     LDC (Integer) 1
     ANEWARRAY java/lang/Class
     ASTORE 1
@@ -4726,14 +4726,6 @@ Method registerClass42 : V
     ALOAD 2
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    ALOAD 3
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    LDC (Boolean) false
-    ALOAD 4
-    // Method descriptor: (Z[Ljava/lang/reflect/Field;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ** label3
     GOTO label4
@@ -4815,7 +4807,7 @@ Method registerClass30 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "[Lorg.hibernate.event.spi.FlushEntityEventListener;"
+    LDC (String) "java.security.interfaces.RSAPrivateKey"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -4826,11 +4818,11 @@ Method registerClass30 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
+    ASTORE 3
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
+    ASTORE 4
     LDC (Integer) 1
     ANEWARRAY java/lang/Class
     ASTORE 1
@@ -4844,6 +4836,14 @@ Method registerClass30 : V
     ALOAD 2
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 3
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    LDC (Boolean) false
+    ALOAD 4
+    // Method descriptor: (Z[Ljava/lang/reflect/Field;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ** label3
     GOTO label4
@@ -4968,7 +4968,7 @@ Method registerClass8 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "com.github.benmanes.caffeine.cache.SSA"
+    LDC (String) "java.util.ArrayList"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -5070,7 +5070,7 @@ Method registerClass79 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.hibernate.type.EnumType"
+    LDC (String) "org.hibernate.hql.internal.ast.tree.HqlSqlWalkerNode"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -5325,7 +5325,7 @@ Method registerClass43 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "sun.security.rsa.RSASignature$SHA512withRSA"
+    LDC (String) "[Lorg.hibernate.event.spi.ClearEventListener;"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -5336,11 +5336,11 @@ Method registerClass43 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    ASTORE 3
+    POP
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    ASTORE 4
+    POP
     LDC (Integer) 1
     ANEWARRAY java/lang/Class
     ASTORE 1
@@ -5354,14 +5354,6 @@ Method registerClass43 : V
     ALOAD 2
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    ALOAD 3
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    LDC (Boolean) false
-    ALOAD 4
-    // Method descriptor: (Z[Ljava/lang/reflect/Field;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ** label3
     GOTO label4
@@ -5443,7 +5435,7 @@ Method registerClass31 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "[Lorg.hibernate.event.spi.ClearEventListener;"
+    LDC (String) "sun.security.rsa.RSASignature$MD5withRSA"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -5454,11 +5446,11 @@ Method registerClass31 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
+    ASTORE 3
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
+    ASTORE 4
     LDC (Integer) 1
     ANEWARRAY java/lang/Class
     ASTORE 1
@@ -5472,6 +5464,14 @@ Method registerClass31 : V
     ALOAD 2
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 3
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    LDC (Boolean) false
+    ALOAD 4
+    // Method descriptor: (Z[Ljava/lang/reflect/Field;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ** label3
     GOTO label4
@@ -5599,21 +5599,21 @@ Method beforeAnalysis : V
     LDC (Type) Lorg/graalvm/nativeimage/impl/RuntimeClassInitializationSupport;
     // Method descriptor: (Ljava/lang/Class;)Ljava/lang/Object;
     INVOKESTATIC org/graalvm/nativeimage/ImageSingletons#lookup
-    ASTORE 4
+    ASTORE 3
     LDC (Type) Lio/quarkus/runner/AutoFeature;
     // Method descriptor: ()Ljava/lang/ClassLoader;
     INVOKEVIRTUAL java/lang/Class#getClassLoader
     ASTORE 2
     ** label3
-    LDC (String) "io.quarkus.runtime.ExecutorRecorder"
+    LDC (String) "org.jboss.logmanager.formatters.TrueColorHolder"
     LDC (Boolean) false
     ALOAD 2
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
-    ASTORE 3
-    ALOAD 4
-    CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
+    ASTORE 4
     ALOAD 3
+    CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
+    ALOAD 4
     LDC (String) "Quarkus"
     // Method descriptor: (Ljava/lang/Class;Ljava/lang/String;)V
     INVOKEINTERFACE org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport#initializeAtRunTime
@@ -5630,13 +5630,13 @@ Method beforeAnalysis : V
     // Catch java/lang/Throwable by going to label6
     ** label5
     ** label8
-    LDC (String) "org.jboss.logmanager.formatters.TrueColorHolder"
+    LDC (String) "io.quarkus.runtime.ExecutorRecorder"
     LDC (Boolean) false
     ALOAD 2
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 6
-    ALOAD 4
+    ALOAD 3
     CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 6
     LDC (String) "Quarkus"
@@ -5661,7 +5661,7 @@ Method beforeAnalysis : V
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 8
-    ALOAD 4
+    ALOAD 3
     CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 8
     LDC (String) "Quarkus"
@@ -5686,7 +5686,7 @@ Method beforeAnalysis : V
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 10
-    ALOAD 4
+    ALOAD 3
     CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 10
     LDC (String) "Quarkus"
@@ -5711,7 +5711,7 @@ Method beforeAnalysis : V
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 12
-    ALOAD 4
+    ALOAD 3
     CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 12
     LDC (String) "Quarkus"
@@ -5736,7 +5736,7 @@ Method beforeAnalysis : V
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 14
-    ALOAD 4
+    ALOAD 3
     CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 14
     LDC (String) "Quarkus"
@@ -5761,7 +5761,7 @@ Method beforeAnalysis : V
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 16
-    ALOAD 4
+    ALOAD 3
     CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 16
     LDC (String) "Quarkus"
@@ -5786,7 +5786,7 @@ Method beforeAnalysis : V
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 18
-    ALOAD 4
+    ALOAD 3
     CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 18
     LDC (String) "Quarkus"
@@ -5811,7 +5811,7 @@ Method beforeAnalysis : V
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 20
-    ALOAD 4
+    ALOAD 3
     CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 20
     LDC (String) "Quarkus"
@@ -5836,7 +5836,7 @@ Method beforeAnalysis : V
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 22
-    ALOAD 4
+    ALOAD 3
     CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 22
     LDC (String) "Quarkus"
@@ -5861,7 +5861,7 @@ Method beforeAnalysis : V
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 24
-    ALOAD 4
+    ALOAD 3
     CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 24
     LDC (String) "Quarkus"
@@ -5886,7 +5886,7 @@ Method beforeAnalysis : V
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 26
-    ALOAD 4
+    ALOAD 3
     CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 26
     LDC (String) "Quarkus"
@@ -5911,7 +5911,7 @@ Method beforeAnalysis : V
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 28
-    ALOAD 4
+    ALOAD 3
     CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 28
     LDC (String) "Quarkus"
@@ -5936,7 +5936,7 @@ Method beforeAnalysis : V
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 30
-    ALOAD 4
+    ALOAD 3
     CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 30
     LDC (String) "Quarkus"
@@ -5961,7 +5961,7 @@ Method beforeAnalysis : V
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 32
-    ALOAD 4
+    ALOAD 3
     CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 32
     LDC (String) "Quarkus"
@@ -5986,7 +5986,7 @@ Method beforeAnalysis : V
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 34
-    ALOAD 4
+    ALOAD 3
     CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 34
     LDC (String) "Quarkus"
@@ -6011,7 +6011,7 @@ Method beforeAnalysis : V
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 36
-    ALOAD 4
+    ALOAD 3
     CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 36
     LDC (String) "Quarkus"
@@ -6036,7 +6036,7 @@ Method beforeAnalysis : V
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 38
-    ALOAD 4
+    ALOAD 3
     CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 38
     LDC (String) "Quarkus"
@@ -6061,7 +6061,7 @@ Method beforeAnalysis : V
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 40
-    ALOAD 4
+    ALOAD 3
     CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 40
     LDC (String) "Quarkus"
@@ -6086,7 +6086,7 @@ Method beforeAnalysis : V
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 42
-    ALOAD 4
+    ALOAD 3
     CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 42
     LDC (String) "Quarkus"
@@ -6109,13 +6109,13 @@ Method beforeAnalysis : V
     INVOKEVIRTUAL java/lang/Class#getClassLoader
     ASTORE 44
     ** label103
-    LDC (String) "java.util.concurrent.ThreadLocalRandom"
+    LDC (String) "io.quarkus.netty.runtime.graal.Holder_io_netty_util_concurrent_ScheduledFutureTask"
     LDC (Boolean) false
     ALOAD 44
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 45
-    ALOAD 4
+    ALOAD 3
     CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 45
     LDC (String) "Quarkus"
@@ -6134,13 +6134,13 @@ Method beforeAnalysis : V
     // Catch java/lang/Throwable by going to label106
     ** label105
     ** label108
-    LDC (String) "io.quarkus.netty.runtime.graal.Holder_io_netty_util_concurrent_ScheduledFutureTask"
+    LDC (String) "java.util.concurrent.ThreadLocalRandom"
     LDC (Boolean) false
     ALOAD 44
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 47
-    ALOAD 4
+    ALOAD 3
     CHECKCAST org/graalvm/nativeimage/impl/RuntimeClassInitializationSupport
     ALOAD 47
     LDC (String) "Quarkus"
@@ -6188,8 +6188,8 @@ Method beforeAnalysis : V
     ALOAD 49
     // Method descriptor: (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethod
-    ASTORE 50
-    ALOAD 50
+    ASTORE 52
+    ALOAD 52
     CHECKCAST java/lang/reflect/AccessibleObject
     LDC (Boolean) true
     // Method descriptor: (Z)V
@@ -6197,18 +6197,18 @@ Method beforeAnalysis : V
     LDC (Type) Lcom/oracle/svm/core/jdk/LocalizationSupport;
     // Method descriptor: (Ljava/lang/Class;)Ljava/lang/Object;
     INVOKESTATIC org/graalvm/nativeimage/ImageSingletons#lookup
-    ASTORE 51
+    ASTORE 50
     ** label113
     LDC (Integer) 1
     ANEWARRAY java/lang/Object
-    ASTORE 52
-    ALOAD 52
+    ASTORE 51
+    ALOAD 51
     LDC (Integer) 0
     LDC (String) "yasson-messages"
     AASTORE
+    ALOAD 52
     ALOAD 50
     ALOAD 51
-    ALOAD 52
     // Method descriptor: (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     INVOKEVIRTUAL java/lang/reflect/Method#invoke
     POP
@@ -6229,8 +6229,8 @@ Method beforeAnalysis : V
     LDC (Integer) 0
     LDC (String) "messages"
     AASTORE
+    ALOAD 52
     ALOAD 50
-    ALOAD 51
     ALOAD 53
     // Method descriptor: (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     INVOKEVIRTUAL java/lang/reflect/Method#invoke
@@ -6696,7 +6696,7 @@ Method registerClass68 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "com.arjuna.ats.jta.common.JTAEnvironmentBean"
+    LDC (String) "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -6959,7 +6959,7 @@ Method registerClass32 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "sun.security.rsa.SunRsaSign"
+    LDC (String) "sun.security.rsa.RSASignature$SHA1withRSA"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -7069,7 +7069,7 @@ Method registerClass20 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.postgresql.Driver"
+    LDC (String) "[Lorg.hibernate.event.spi.InitializeCollectionEventListener;"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -7080,7 +7080,7 @@ Method registerClass20 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    ASTORE 3
+    POP
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
@@ -7096,10 +7096,6 @@ Method registerClass20 : V
     // Method descriptor: ([Ljava/lang/Class;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    ALOAD 3
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
@@ -7175,7 +7171,7 @@ Method registerClass2 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.util.HashSet"
+    LDC (String) "com.github.benmanes.caffeine.cache.PSA"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -7277,7 +7273,7 @@ Method registerClass69 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "com.arjuna.ats.internal.jta.transaction.arjunacore.UserTransactionImple"
+    LDC (String) "org.hibernate.id.enhanced.SequenceStyleGenerator"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -7328,7 +7324,7 @@ Method registerClass1 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.util.HashMap"
+    LDC (String) "com.github.benmanes.caffeine.cache.SSMSA"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -7591,7 +7587,7 @@ Method registerClass33 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "sun.security.rsa.RSAKeyFactory"
+    LDC (String) "sun.security.rsa.RSASignature$SHA224withRSA"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -7701,7 +7697,7 @@ Method registerClass21 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.eclipse.yasson.JsonBindingProvider"
+    LDC (String) "io.quarkus.vertx.core.runtime.VertxLogDelegateFactory"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -7712,7 +7708,7 @@ Method registerClass21 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
+    ASTORE 3
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
@@ -7728,6 +7724,10 @@ Method registerClass21 : V
     // Method descriptor: ([Ljava/lang/Class;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 3
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
@@ -7854,7 +7854,7 @@ Method registerClass90 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "[Ljava.sql.ResultSet;"
+    LDC (String) "io.agroal.api.security.AgroalDefaultSecurityProvider"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -8117,7 +8117,7 @@ Method registerClass34 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "sun.security.rsa.RSAKeyPairGenerator"
+    LDC (String) "sun.security.rsa.RSASignature$SHA256withRSA"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -8227,7 +8227,7 @@ Method registerClass22 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "[Lorg.hibernate.event.spi.PersistEventListener;"
+    LDC (String) "[Lorg.hibernate.event.spi.SaveOrUpdateEventListener;"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -8329,7 +8329,7 @@ Method registerClass4 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.util.LinkedHashMap"
+    LDC (String) "com.github.benmanes.caffeine.cache.PSWMS"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -8380,7 +8380,7 @@ Method registerClass10 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "com.github.benmanes.caffeine.cache.PSA"
+    LDC (String) "java.util.HashSet"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -8533,7 +8533,7 @@ Method registerClass91 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.hibernate.hql.internal.ast.tree.SelectClause"
+    LDC (String) "io.agroal.api.security.AgroalKerberosSecurityProvider"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -8796,7 +8796,7 @@ Method registerClass35 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "sun.security.rsa.RSASignature$MD2withRSA"
+    LDC (String) "sun.security.rsa.RSASignature$SHA384withRSA"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -8906,7 +8906,7 @@ Method registerClass23 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.glassfish.json.JsonProviderImpl"
+    LDC (String) "[Lorg.hibernate.event.spi.PersistEventListener;"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -9008,7 +9008,7 @@ Method registerClass11 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "com.github.benmanes.caffeine.cache.PSW"
+    LDC (String) "java.util.LinkedList"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -9161,7 +9161,7 @@ Method registerClass3 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.util.LinkedList"
+    LDC (String) "com.github.benmanes.caffeine.cache.PSW"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -9212,7 +9212,7 @@ Method registerClass92 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.hibernate.hql.internal.ast.tree.HqlSqlWalkerNode"
+    LDC (String) "[Ljava.sql.Statement;"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -9263,7 +9263,7 @@ Method registerClass80 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.hibernate.tool.hbm2ddl.MultipleLinesSqlCommandExtractor"
+    LDC (String) "com.arjuna.ats.jta.common.JTAEnvironmentBean"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -9518,7 +9518,7 @@ Method registerClass36 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.security.interfaces.RSAPublicKey"
+    LDC (String) "sun.security.rsa.RSASignature$SHA512withRSA"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -9730,7 +9730,7 @@ Method registerClass12 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "com.github.benmanes.caffeine.cache.PSWMS"
+    LDC (String) "java.util.LinkedHashSet"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -9934,7 +9934,7 @@ Method registerClass93 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.hibernate.hql.internal.ast.tree.MethodNode"
+    LDC (String) "java.sql.Statement"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -9985,7 +9985,7 @@ Method registerClass81 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.hibernate.hql.internal.ast.HqlToken"
+    LDC (String) "com.arjuna.ats.internal.jta.transaction.arjunacore.UserTransactionImple"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -10244,7 +10244,58 @@ Method registerClass37 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.security.interfaces.RSAPrivateKey"
+    LDC (String) "[Lorg.hibernate.event.spi.DeleteEventListener;"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass25 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "sun.security.rsa.SunRsaSign"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -10281,57 +10332,6 @@ Method registerClass37 : V
     LDC (Boolean) false
     ALOAD 4
     // Method descriptor: (Z[Ljava/lang/reflect/Field;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass25 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "[Lorg.hibernate.event.spi.DeleteEventListener;"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ** label3
     GOTO label4
@@ -10405,7 +10405,7 @@ Method registerClass13 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "[Lorg.hibernate.event.spi.LoadEventListener;"
+    LDC (String) "java.util.TreeMap"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -10671,7 +10671,7 @@ Method registerClass94 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.hibernate.hql.internal.ast.tree.AbstractStatement"
+    LDC (String) "java.sql.ResultSet"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -10722,7 +10722,7 @@ Method registerClass82 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.hibernate.hql.internal.ast.tree.Node"
+    LDC (String) "com.arjuna.ats.internal.arjuna.coordinator.CheckedActionFactoryImple"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -10773,7 +10773,7 @@ Method registerClass70 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "com.arjuna.ats.internal.arjuna.coordinator.CheckedActionFactoryImple"
+    LDC (String) "org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -11064,17 +11064,17 @@ Method registerClass170 : V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     LDC (Integer) 1
     ANEWARRAY java/lang/reflect/Field
-    ASTORE 4
+    ASTORE 3
     ALOAD 0
     LDC (String) "jsonb"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredField
-    ASTORE 3
-    ALOAD 4
-    LDC (Integer) 0
+    ASTORE 4
     ALOAD 3
-    AASTORE
+    LDC (Integer) 0
     ALOAD 4
+    AASTORE
+    ALOAD 3
     // Method descriptor: ([Ljava/lang/reflect/Field;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ** label3
@@ -11098,7 +11098,58 @@ Method registerClass38 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "sun.security.rsa.RSASignature$MD5withRSA"
+    LDC (String) "[Lorg.hibernate.event.spi.ReplicateEventListener;"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass26 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "sun.security.rsa.RSAKeyFactory"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -11151,64 +11202,13 @@ Method registerClass38 : V
 }
 
 // Access: private static
-Method registerClass26 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "[Lorg.hibernate.event.spi.ReplicateEventListener;"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
 Method registerClass0 : V
 (
     // (no arguments)
 ) {
     ** label1
     ** label2
-    LDC (String) "java.util.ArrayList"
+    LDC (String) "com.github.benmanes.caffeine.cache.SSA"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -11259,7 +11259,7 @@ Method registerClass14 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "[Lorg.hibernate.event.spi.ResolveNaturalIdEventListener;"
+    LDC (String) "java.util.TreeSet"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -11705,7 +11705,7 @@ Method registerClass83 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "[Lio.agroal.pool.ConnectionHandler;"
+    LDC (String) "com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionManagerImple"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -11756,7 +11756,7 @@ Method registerClass71 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionManagerImple"
+    LDC (String) "org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -12066,7 +12066,58 @@ Method registerClass39 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "sun.security.rsa.RSASignature$SHA1withRSA"
+    LDC (String) "[Lorg.hibernate.event.spi.FlushEventListener;"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass27 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "sun.security.rsa.RSAKeyPairGenerator"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -12119,64 +12170,13 @@ Method registerClass39 : V
 }
 
 // Access: private static
-Method registerClass27 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "[Lorg.hibernate.event.spi.FlushEventListener;"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
 Method registerClass15 : V
 (
     // (no arguments)
 ) {
     ** label1
     ** label2
-    LDC (String) "io.netty.channel.socket.nio.NioSocketChannel"
+    LDC (String) "org.eclipse.yasson.JsonBindingProvider"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -12435,7 +12435,7 @@ Method registerClass95 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.hibernate.hql.internal.ast.tree.EntityJoinFromElement"
+    LDC (String) "[Ljava.sql.ResultSet;"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0

@@ -17,7 +17,7 @@ services:
      # For local development of auditlog-enricher
      # - ADVERTISED_HOST_NAME=192.168.1.6
      - KAFKA_GROUP_MIN_SESSION_TIMEOUT_MS=250
-  vegetables-db:
+  order-management-db:
     image: debezium/example-postgres:${DEBEZIUM_VERSION}
     ports:
      - 5432:5432
@@ -44,7 +44,7 @@ services:
       context: debezium-jdbc-es
     links:
       - kafka
-      - vegetables-db
+      - order-management-db
       - elastic
     environment:
       - BOOTSTRAP_SERVERS=kafka:9092
@@ -55,23 +55,20 @@ services:
       - CONNECT_KEY_CONVERTER_SCHEMAS_ENABLE=false
       - CONNECT_VALUE_CONVERTER_SCHEMAS_ENABLE=false
 
-  vegetables-service:
-    image: debezium-examples/auditing-vegetables-service:${DEBEZIUM_VERSION}
+  order-management-service:
+    image: debezium-examples/entitylog-order-management-service:${DEBEZIUM_VERSION}
     build:
-      context: vegetables-service
+      context: order-management-service
       dockerfile: src/main/docker/Dockerfile.jvm
     ports:
      - 8080:8080
     links:
-     - vegetables-db
+     - order-management-db
     environment:
-     - QUARKUS_DATASOURCE_URL=jdbc:postgresql://vegetables-db:5432/vegetablesdb?currentSchema=inventory
-      #depends_on:
-      # vegetable-db:
-      #    condition: service_healthy
+     - QUARKUS_DATASOURCE_URL=jdbc:postgresql://order-management-db:5432/vegetablesdb?currentSchema=inventory
 
   log-enricher:
-    image: debezium-examples/auditing-log-enricher:${DEBEZIUM_VERSION}
+    image: debezium-examples/entitylog-log-enricher:${DEBEZIUM_VERSION}
     build:
       context: log-enricher
       dockerfile: src/main/docker/Dockerfile.jvm
@@ -82,16 +79,3 @@ services:
     environment:
      - QUARKUS_KAFKA_STREAMS_BOOTSTRAP_SERVERS=kafka:9092
 
-#  admin-service:
-#    image: debezium-examples/auditing-admin-service:${DEBEZIUM_VERSION}
-#    build:
-#      context: admin-service
-#      dockerfile: src/main/docker/Dockerfile.jvm
-#    ports:
-#     - 8085:8080
-#    links:
-#     - kafka
-#    environment:
-#     - MP_MESSAGING_INCOMING_VEGETABLES_BOOTSTRAP_SERVERS=kafka:9092
-#     - MP_MESSAGING_INCOMING_TRANSACTIONS_BOOTSTRAP_SERVERS=kafka:9092
-#     - MP_MESSAGING_OUTGOING_MISSINGTRANSACTIONS_BOOTSTRAP_SERVERS=kafka:9092
