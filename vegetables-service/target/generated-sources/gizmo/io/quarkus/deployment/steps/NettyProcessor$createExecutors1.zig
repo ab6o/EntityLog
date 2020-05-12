@@ -62,8 +62,8 @@ Method deploy_0 : V
     ALOAD 2
     LDC (Integer) 0
     AALOAD
-    ASTORE 7
-    ALOAD 7
+    ASTORE 6
+    ALOAD 6
     CHECKCAST io/quarkus/netty/runtime/NettyRecorder
     ALOAD 4
     CHECKCAST java/lang/Integer
@@ -80,10 +80,10 @@ Method deploy_0 : V
     LDC (Integer) 0
     // Method descriptor: (I)Ljava/lang/Integer;
     INVOKESTATIC java/lang/Integer#valueOf
-    ASTORE 6
-    ALOAD 7
-    CHECKCAST io/quarkus/netty/runtime/NettyRecorder
+    ASTORE 7
     ALOAD 6
+    CHECKCAST io/quarkus/netty/runtime/NettyRecorder
+    ALOAD 7
     CHECKCAST java/lang/Integer
     // Method descriptor: ()I
     INVOKEVIRTUAL java/lang/Integer#intValue
@@ -91,7 +91,7 @@ Method deploy_0 : V
     INVOKEVIRTUAL io/quarkus/netty/runtime/NettyRecorder#createEventLoop
     ASTORE 8
     ALOAD 1
-    LDC (String) "proxykey25"
+    LDC (String) "proxykey19"
     ALOAD 8
     // Method descriptor: (Ljava/lang/String;Ljava/lang/Object;)V
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#putValue

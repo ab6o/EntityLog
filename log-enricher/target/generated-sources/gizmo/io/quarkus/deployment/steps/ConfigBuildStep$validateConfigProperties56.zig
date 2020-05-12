@@ -173,15 +173,15 @@ Method deploy_0 : V
     ALOAD 2
     LDC (Integer) 11
     AALOAD
-    ASTORE 15
+    ASTORE 14
     ALOAD 2
     LDC (Integer) 2
     AALOAD
-    ASTORE 14
-    ALOAD 15
+    ASTORE 15
+    ALOAD 14
     CHECKCAST java/util/Map
     LDC (String) "audit.purchase.orders.topic"
-    ALOAD 14
+    ALOAD 15
     // Method descriptor: (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     INVOKEINTERFACE java/util/Map#put
     POP
@@ -189,7 +189,7 @@ Method deploy_0 : V
     LDC (Integer) 4
     AALOAD
     ASTORE 16
-    ALOAD 15
+    ALOAD 14
     CHECKCAST java/util/Map
     LDC (String) "audit.purchase.orderlines.transformed.topic"
     ALOAD 16
@@ -200,7 +200,7 @@ Method deploy_0 : V
     LDC (Integer) 6
     AALOAD
     ASTORE 17
-    ALOAD 15
+    ALOAD 14
     CHECKCAST java/util/Map
     LDC (String) "audit.context.data.topic"
     ALOAD 17
@@ -211,7 +211,7 @@ Method deploy_0 : V
     LDC (Integer) 8
     AALOAD
     ASTORE 18
-    ALOAD 15
+    ALOAD 14
     CHECKCAST java/util/Map
     LDC (String) "audit.purchase.orders.enriched.topic"
     ALOAD 18
@@ -222,7 +222,7 @@ Method deploy_0 : V
     LDC (Integer) 10
     AALOAD
     ASTORE 19
-    ALOAD 15
+    ALOAD 14
     CHECKCAST java/util/Map
     LDC (String) "audit.purchase.orderlines.topic"
     ALOAD 19
@@ -231,7 +231,7 @@ Method deploy_0 : V
     POP
     ALOAD 2
     LDC (Integer) 12
-    ALOAD 15
+    ALOAD 14
     AASTORE
     NEW io/quarkus/arc/runtime/ConfigRecorder
     DUP

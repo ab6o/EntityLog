@@ -202,20 +202,20 @@ Method deploy_0 : V
     ALOAD 2
     LDC (Integer) 3
     AALOAD
-    ASTORE 13
+    ASTORE 12
     ALOAD 2
     LDC (Integer) 2
     AALOAD
-    ASTORE 12
-    ALOAD 13
-    CHECKCAST java/util/Collection
+    ASTORE 13
     ALOAD 12
+    CHECKCAST java/util/Collection
+    ALOAD 13
     // Method descriptor: (Ljava/lang/Object;)Z
     INVOKEINTERFACE java/util/Collection#add
     POP
     ALOAD 2
     LDC (Integer) 4
-    ALOAD 13
+    ALOAD 12
     AASTORE
     NEW io/quarkus/hibernate/orm/runtime/boot/scan/QuarkusScanner
     DUP
@@ -259,7 +259,7 @@ Method deploy_0 : V
     INVOKEVIRTUAL io/quarkus/hibernate/orm/runtime/boot/scan/QuarkusScanner$ClassDescriptorImpl#setCategorization
     ALOAD 18
     CHECKCAST io/quarkus/hibernate/orm/runtime/boot/scan/QuarkusScanner$ClassDescriptorImpl
-    LDC (String) "io.debezium.demos.auditing.vegetables.model.Vegetable"
+    LDC (String) "io.debezium.demos.auditing.orders.model.PurchaseOrderLine"
     // Method descriptor: (Ljava/lang/String;)V
     INVOKEVIRTUAL io/quarkus/hibernate/orm/runtime/boot/scan/QuarkusScanner$ClassDescriptorImpl#setName
     ALOAD 2
@@ -290,7 +290,7 @@ Method deploy_0 : V
     INVOKEVIRTUAL io/quarkus/hibernate/orm/runtime/boot/scan/QuarkusScanner$ClassDescriptorImpl#setCategorization
     ALOAD 21
     CHECKCAST io/quarkus/hibernate/orm/runtime/boot/scan/QuarkusScanner$ClassDescriptorImpl
-    LDC (String) "io.debezium.demos.auditing.vegetables.transactioncontext.TransactionContextData"
+    LDC (String) "io.debezium.demos.auditing.vegetables.model.Vegetable"
     // Method descriptor: (Ljava/lang/String;)V
     INVOKEVIRTUAL io/quarkus/hibernate/orm/runtime/boot/scan/QuarkusScanner$ClassDescriptorImpl#setName
     ALOAD 2
@@ -309,24 +309,24 @@ Method deploy_0 : V
     ALOAD 2
     LDC (Integer) 9
     AALOAD
-    ASTORE 24
+    ASTORE 23
     LDC (String) "MODEL"
     // Method descriptor: (Ljava/lang/String;)Lorg/hibernate/boot/archive/scan/spi/ClassDescriptor$Categorization;
     INVOKESTATIC org/hibernate/boot/archive/scan/spi/ClassDescriptor$Categorization#valueOf
-    ASTORE 23
-    ALOAD 24
-    CHECKCAST io/quarkus/hibernate/orm/runtime/boot/scan/QuarkusScanner$ClassDescriptorImpl
+    ASTORE 24
     ALOAD 23
+    CHECKCAST io/quarkus/hibernate/orm/runtime/boot/scan/QuarkusScanner$ClassDescriptorImpl
+    ALOAD 24
     // Method descriptor: (Lorg/hibernate/boot/archive/scan/spi/ClassDescriptor$Categorization;)V
     INVOKEVIRTUAL io/quarkus/hibernate/orm/runtime/boot/scan/QuarkusScanner$ClassDescriptorImpl#setCategorization
-    ALOAD 24
+    ALOAD 23
     CHECKCAST io/quarkus/hibernate/orm/runtime/boot/scan/QuarkusScanner$ClassDescriptorImpl
-    LDC (String) "io.debezium.demos.auditing.orders.model.PurchaseOrderLine"
+    LDC (String) "io.debezium.demos.auditing.vegetables.transactioncontext.TransactionContextData"
     // Method descriptor: (Ljava/lang/String;)V
     INVOKEVIRTUAL io/quarkus/hibernate/orm/runtime/boot/scan/QuarkusScanner$ClassDescriptorImpl#setName
     ALOAD 2
     LDC (Integer) 10
-    ALOAD 24
+    ALOAD 23
     AASTORE
     NEW io/quarkus/hibernate/orm/runtime/boot/scan/QuarkusScanner$ClassDescriptorImpl
     DUP
@@ -362,14 +362,14 @@ Method deploy_0 : V
     ALOAD 2
     LDC (Integer) 13
     AALOAD
-    ASTORE 28
+    ASTORE 29
     ALOAD 2
     LDC (Integer) 6
     AALOAD
-    ASTORE 29
-    ALOAD 28
-    CHECKCAST java/util/Collection
+    ASTORE 28
     ALOAD 29
+    CHECKCAST java/util/Collection
+    ALOAD 28
     // Method descriptor: (Ljava/lang/Object;)Z
     INVOKEINTERFACE java/util/Collection#add
     POP
@@ -377,7 +377,7 @@ Method deploy_0 : V
     LDC (Integer) 8
     AALOAD
     ASTORE 30
-    ALOAD 28
+    ALOAD 29
     CHECKCAST java/util/Collection
     ALOAD 30
     // Method descriptor: (Ljava/lang/Object;)Z
@@ -387,7 +387,7 @@ Method deploy_0 : V
     LDC (Integer) 10
     AALOAD
     ASTORE 31
-    ALOAD 28
+    ALOAD 29
     CHECKCAST java/util/Collection
     ALOAD 31
     // Method descriptor: (Ljava/lang/Object;)Z
@@ -397,7 +397,7 @@ Method deploy_0 : V
     LDC (Integer) 12
     AALOAD
     ASTORE 32
-    ALOAD 28
+    ALOAD 29
     CHECKCAST java/util/Collection
     ALOAD 32
     // Method descriptor: (Ljava/lang/Object;)Z
@@ -405,7 +405,7 @@ Method deploy_0 : V
     POP
     ALOAD 2
     LDC (Integer) 14
-    ALOAD 28
+    ALOAD 29
     AASTORE
     ALOAD 2
     LDC (Integer) 15
@@ -462,26 +462,26 @@ Method deploy_0 : V
     ALOAD 2
     LDC (Integer) 4
     AALOAD
-    ASTORE 40
+    ASTORE 42
     ALOAD 2
     LDC (Integer) 16
     AALOAD
-    ASTORE 42
+    ASTORE 39
     ALOAD 2
     LDC (Integer) 18
     AALOAD
-    ASTORE 39
+    ASTORE 40
     ALOAD 2
     LDC (Integer) 20
     AALOAD
     ASTORE 41
     ALOAD 4
     CHECKCAST io/quarkus/hibernate/orm/runtime/HibernateOrmRecorder
-    ALOAD 40
-    CHECKCAST java/util/List
     ALOAD 42
-    CHECKCAST org/hibernate/boot/archive/scan/spi/Scanner
+    CHECKCAST java/util/List
     ALOAD 39
+    CHECKCAST org/hibernate/boot/archive/scan/spi/Scanner
+    ALOAD 40
     CHECKCAST java/util/Collection
     ALOAD 41
     CHECKCAST java/util/Collection

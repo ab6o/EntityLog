@@ -44,6 +44,7 @@ public class OrderTopologyProducer {
 
     @Produces
     public Topology buildTopology() {
+        LOG.info("Building Order Topology for Processing");
         StreamsBuilder builder = new StreamsBuilder();
 
         StoreBuilder<KeyValueStore<Long, JsonObject>> streamBufferStateStore =

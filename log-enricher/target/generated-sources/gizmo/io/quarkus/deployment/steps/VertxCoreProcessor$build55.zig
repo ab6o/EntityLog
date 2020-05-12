@@ -53,7 +53,7 @@ Method deploy_0 : V
     ALOAD 2
     LDC (Integer) 1
     AALOAD
-    ASTORE 8
+    ASTORE 7
     LDC (String) "NORMAL"
     // Method descriptor: (Ljava/lang/String;)Lio/quarkus/runtime/LaunchMode;
     INVOKESTATIC io/quarkus/runtime/LaunchMode#valueOf
@@ -62,17 +62,17 @@ Method deploy_0 : V
     LDC (String) "io.quarkus.runtime.ShutdownContext"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 7
+    ASTORE 8
     ALOAD 2
     LDC (Integer) 0
     AALOAD
     CHECKCAST io/quarkus/vertx/core/runtime/VertxCoreRecorder
     ALOAD 5
     CHECKCAST io/quarkus/arc/runtime/BeanContainer
-    ALOAD 8
+    ALOAD 7
     CHECKCAST io/quarkus/vertx/core/runtime/config/VertxConfiguration
     ALOAD 6
-    ALOAD 7
+    ALOAD 8
     CHECKCAST io/quarkus/runtime/ShutdownContext
     // Method descriptor: (Lio/quarkus/arc/runtime/BeanContainer;Lio/quarkus/vertx/core/runtime/config/VertxConfiguration;Lio/quarkus/runtime/LaunchMode;Lio/quarkus/runtime/ShutdownContext;)Ljava/util/function/Supplier;
     INVOKEVIRTUAL io/quarkus/vertx/core/runtime/VertxCoreRecorder#configureVertx
