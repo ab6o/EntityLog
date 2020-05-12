@@ -252,7 +252,7 @@ Method beforeAnalysis : V
     INVOKEVIRTUAL java/lang/Class#getClassLoader
     ASTORE 2
     ** label3
-    LDC (String) "org.jboss.logmanager.formatters.TrueColorHolder"
+    LDC (String) "io.quarkus.runtime.ExecutorRecorder"
     LDC (Boolean) false
     ALOAD 2
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
@@ -277,7 +277,7 @@ Method beforeAnalysis : V
     // Catch java/lang/Throwable by going to label6
     ** label5
     ** label8
-    LDC (String) "io.quarkus.runtime.ExecutorRecorder"
+    LDC (String) "org.jboss.logmanager.formatters.TrueColorHolder"
     LDC (Boolean) false
     ALOAD 2
     // Method descriptor: (Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
@@ -792,13 +792,13 @@ Method beforeAnalysis : V
     LDC (String) "META-INF/services/javax.ws.rs.client.ClientBuilder"
     // Method descriptor: (Ljava/lang/String;)V
     INVOKESTATIC io/quarkus/runtime/ResourceHelper#registerResources
-    LDC (String) "META-INF/services/org.jboss.logmanager.EmbeddedConfigurator"
-    // Method descriptor: (Ljava/lang/String;)V
-    INVOKESTATIC io/quarkus/runtime/ResourceHelper#registerResources
     LDC (String) "META-INF/services/org.eclipse.microprofile.reactive.streams.operators.spi.ReactiveStreamsEngine"
     // Method descriptor: (Ljava/lang/String;)V
     INVOKESTATIC io/quarkus/runtime/ResourceHelper#registerResources
     LDC (String) "META-INF/services/org.eclipse.microprofile.reactive.streams.operators.ReactiveStreamsFactory"
+    // Method descriptor: (Ljava/lang/String;)V
+    INVOKESTATIC io/quarkus/runtime/ResourceHelper#registerResources
+    LDC (String) "META-INF/services/org.jboss.logmanager.EmbeddedConfigurator"
     // Method descriptor: (Ljava/lang/String;)V
     INVOKESTATIC io/quarkus/runtime/ResourceHelper#registerResources
     LDC (Integer) 1
@@ -822,18 +822,18 @@ Method beforeAnalysis : V
     LDC (Type) Lcom/oracle/svm/core/jdk/LocalizationSupport;
     // Method descriptor: (Ljava/lang/Class;)Ljava/lang/Object;
     INVOKESTATIC org/graalvm/nativeimage/ImageSingletons#lookup
-    ASTORE 50
+    ASTORE 48
     ** label108
     LDC (Integer) 1
     ANEWARRAY java/lang/Object
-    ASTORE 48
-    ALOAD 48
+    ASTORE 50
+    ALOAD 50
     LDC (Integer) 0
     LDC (String) "messages"
     AASTORE
     ALOAD 49
-    ALOAD 50
     ALOAD 48
+    ALOAD 50
     // Method descriptor: (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     INVOKEVIRTUAL java/lang/reflect/Method#invoke
     POP
@@ -1173,7 +1173,7 @@ Method registerClass16 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "io.vertx.kafka.client.serialization.JsonArrayDeserializer"
+    LDC (String) "io.quarkus.vertx.core.runtime.VertxLogDelegateFactory"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1550,7 +1550,7 @@ Method registerClass2 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.util.LinkedHashMap"
+    LDC (String) "io.vertx.kafka.client.serialization.JsonArraySerializer"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1561,7 +1561,7 @@ Method registerClass2 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
+    ASTORE 3
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
@@ -1577,6 +1577,10 @@ Method registerClass2 : V
     // Method descriptor: ([Ljava/lang/Class;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 3
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
@@ -1660,7 +1664,7 @@ Method registerClass120 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.acme.vegetables.guard.VegetablesMessageConsumer_1_SmallryeMessagingInvoker_consume_a793a9cc76abe8ea0eedf6d7f2db6d132889e355"
+    LDC (String) "io.debezium.demos.auditing.admin.TransactionsMessageConsumer_1_SmallryeMessagingInvoker_consume_a793a9cc76abe8ea0eedf6d7f2db6d132889e355"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2080,7 +2084,7 @@ Method registerClass1 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "io.netty.channel.socket.nio.NioServerSocketChannel"
+    LDC (String) "io.vertx.kafka.client.serialization.BufferSerializer"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2091,7 +2095,7 @@ Method registerClass1 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
+    ASTORE 3
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
@@ -2107,6 +2111,10 @@ Method registerClass1 : V
     // Method descriptor: ([Ljava/lang/Class;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 3
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
@@ -2430,17 +2438,17 @@ Method registerClass121 : V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     LDC (Integer) 1
     ANEWARRAY java/lang/reflect/Field
-    ASTORE 2
+    ASTORE 3
     ALOAD 0
     LDC (String) "servers"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredField
-    ASTORE 3
-    ALOAD 2
-    LDC (Integer) 0
+    ASTORE 2
     ALOAD 3
-    AASTORE
+    LDC (Integer) 0
     ALOAD 2
+    AASTORE
+    ALOAD 3
     // Method descriptor: ([Ljava/lang/reflect/Field;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 0
@@ -2448,11 +2456,11 @@ Method registerClass121 : V
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredField
     ASTORE 4
-    ALOAD 2
+    ALOAD 3
     LDC (Integer) 0
     ALOAD 4
     AASTORE
-    ALOAD 2
+    ALOAD 3
     // Method descriptor: ([Ljava/lang/reflect/Field;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ** label3
@@ -2688,7 +2696,7 @@ Method registerClass119 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "io.debezium.demos.auditing.admin.TransactionsMessageConsumer_1_SmallryeMessagingInvoker_consume_a793a9cc76abe8ea0eedf6d7f2db6d132889e355"
+    LDC (String) "org.acme.vegetables.guard.VegetablesMessageConsumer_1_SmallryeMessagingInvoker_consume_a793a9cc76abe8ea0eedf6d7f2db6d132889e355"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -3061,58 +3069,7 @@ Method registerClass4 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.util.HashMap"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass10 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "io.quarkus.vertx.core.runtime.VertxLogDelegateFactory"
+    LDC (String) "io.vertx.kafka.client.serialization.BufferDeserializer"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -3143,6 +3100,57 @@ Method registerClass10 : V
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 3
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass10 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "java.util.LinkedHashMap"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
@@ -3254,7 +3262,7 @@ Method registerClass122 : V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     LDC (Integer) 1
     ANEWARRAY java/lang/reflect/Method
-    ASTORE 4
+    ASTORE 3
     LDC (Integer) 0
     ANEWARRAY java/lang/Class
     ASTORE 2
@@ -3263,12 +3271,12 @@ Method registerClass122 : V
     ALOAD 2
     // Method descriptor: (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethod
-    ASTORE 3
-    ALOAD 4
-    LDC (Integer) 0
+    ASTORE 4
     ALOAD 3
-    AASTORE
+    LDC (Integer) 0
     ALOAD 4
+    AASTORE
+    ALOAD 3
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
@@ -3281,11 +3289,11 @@ Method registerClass122 : V
     // Method descriptor: (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethod
     ASTORE 6
-    ALOAD 4
+    ALOAD 3
     LDC (Integer) 0
     ALOAD 6
     AASTORE
-    ALOAD 4
+    ALOAD 3
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
@@ -3887,7 +3895,7 @@ Method registerClass11 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "io.vertx.kafka.client.serialization.JsonObjectSerializer"
+    LDC (String) "java.util.LinkedHashSet"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -3898,7 +3906,7 @@ Method registerClass11 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    ASTORE 3
+    POP
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
@@ -3914,10 +3922,6 @@ Method registerClass11 : V
     // Method descriptor: ([Ljava/lang/Class;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    ALOAD 3
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
@@ -4001,7 +4005,7 @@ Method registerClass123 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "io.quarkus.runtime.logging.InitialConfigurator"
+    LDC (String) "io.smallrye.reactive.streams.Engine"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -4260,7 +4264,7 @@ Method registerClass3 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.util.ArrayList"
+    LDC (String) "io.vertx.kafka.client.serialization.JsonObjectDeserializer"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -4271,7 +4275,7 @@ Method registerClass3 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
+    ASTORE 3
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
@@ -4287,6 +4291,10 @@ Method registerClass3 : V
     // Method descriptor: ([Ljava/lang/Class;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 3
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
@@ -4421,7 +4429,7 @@ Method registerClass7 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.util.LinkedHashSet"
+    LDC (String) "java.util.HashMap"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -4578,7 +4586,7 @@ Method registerClass48 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.acme.vegetables.guard.VegetablesMessageDataEvent_1"
+    LDC (String) "io.debezium.demos.auditing.admin.TransactionsMessageDataEvent_1"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -4739,7 +4747,7 @@ Method registerClass12 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "io.vertx.kafka.client.serialization.BufferSerializer"
+    LDC (String) "java.util.TreeMap"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -4750,7 +4758,7 @@ Method registerClass12 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    ASTORE 3
+    POP
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
@@ -4766,10 +4774,6 @@ Method registerClass12 : V
     // Method descriptor: ([Ljava/lang/Class;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    ALOAD 3
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
@@ -4794,7 +4798,7 @@ Method registerClass124 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "io.smallrye.reactive.streams.Engine"
+    LDC (String) "org.eclipse.microprofile.reactive.streams.operators.core.ReactiveStreamsFactoryImpl"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -5273,7 +5277,7 @@ Method registerClass6 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.util.LinkedList"
+    LDC (String) "java.util.ArrayList"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -5375,7 +5379,7 @@ Method registerClass49 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "io.debezium.demos.auditing.admin.TransactionsMessageDataEvent_1"
+    LDC (String) "org.acme.vegetables.guard.VegetablesMessageDataEvent_1"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -5536,7 +5540,7 @@ Method registerClass13 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "io.vertx.kafka.client.serialization.JsonArraySerializer"
+    LDC (String) "java.util.TreeSet"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -5547,7 +5551,7 @@ Method registerClass13 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    ASTORE 3
+    POP
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
@@ -5563,10 +5567,6 @@ Method registerClass13 : V
     // Method descriptor: ([Ljava/lang/Class;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    ALOAD 3
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
@@ -5591,7 +5591,7 @@ Method registerClass125 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.eclipse.microprofile.reactive.streams.operators.core.ReactiveStreamsFactoryImpl"
+    LDC (String) "io.quarkus.runtime.logging.InitialConfigurator"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -5909,7 +5909,7 @@ Method registerClass5 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.util.HashSet"
+    LDC (String) "io.vertx.kafka.client.serialization.JsonArrayDeserializer"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -5920,7 +5920,7 @@ Method registerClass5 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
+    ASTORE 3
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
@@ -5936,6 +5936,10 @@ Method registerClass5 : V
     // Method descriptor: ([Ljava/lang/Class;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 3
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
@@ -6129,7 +6133,7 @@ Method registerClass9 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.util.TreeSet"
+    LDC (String) "java.util.LinkedList"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -6384,58 +6388,7 @@ Method registerClass0 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "io.netty.channel.socket.nio.NioSocketChannel"
-    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
-    INVOKESTATIC java/lang/Class#forName
-    ASTORE 0
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
-    ASTORE 2
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Method;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
-    ALOAD 0
-    // Method descriptor: ()[Ljava/lang/reflect/Field;
-    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
-    LDC (Integer) 1
-    ANEWARRAY java/lang/Class
-    ASTORE 1
-    ALOAD 1
-    LDC (Integer) 0
-    ALOAD 0
-    AASTORE
-    ALOAD 1
-    // Method descriptor: ([Ljava/lang/Class;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    ** label3
-    GOTO label4
-    ** label5
-    POP
-    ** label6
-    GOTO label4
-    // Try from label2 to label3
-    // Catch java/lang/Throwable by going to label5
-    ** label4
-    RETURN
-    ** label7
-    
-}
-
-// Access: private static
-Method registerClass14 : V
-(
-    // (no arguments)
-) {
-    ** label1
-    ** label2
-    LDC (String) "io.vertx.kafka.client.serialization.JsonObjectDeserializer"
+    LDC (String) "io.vertx.kafka.client.serialization.JsonObjectSerializer"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -6466,6 +6419,57 @@ Method registerClass14 : V
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 3
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ** label3
+    GOTO label4
+    ** label5
+    POP
+    ** label6
+    GOTO label4
+    // Try from label2 to label3
+    // Catch java/lang/Throwable by going to label5
+    ** label4
+    RETURN
+    ** label7
+    
+}
+
+// Access: private static
+Method registerClass14 : V
+(
+    // (no arguments)
+) {
+    ** label1
+    ** label2
+    LDC (String) "io.netty.channel.socket.nio.NioSocketChannel"
+    // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
+    INVOKESTATIC java/lang/Class#forName
+    ASTORE 0
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Constructor;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredConstructors
+    ASTORE 2
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Method;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
+    POP
+    ALOAD 0
+    // Method descriptor: ()[Ljava/lang/reflect/Field;
+    INVOKEVIRTUAL java/lang/Class#getDeclaredFields
+    POP
+    LDC (Integer) 1
+    ANEWARRAY java/lang/Class
+    ASTORE 1
+    ALOAD 1
+    LDC (Integer) 0
+    ALOAD 0
+    AASTORE
+    ALOAD 1
+    // Method descriptor: ([Ljava/lang/Class;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 2
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
@@ -6867,7 +6871,7 @@ Method registerClass8 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.util.TreeMap"
+    LDC (String) "java.util.HashSet"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -7192,7 +7196,7 @@ Method registerClass15 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "io.vertx.kafka.client.serialization.BufferDeserializer"
+    LDC (String) "io.netty.channel.socket.nio.NioServerSocketChannel"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -7203,7 +7207,7 @@ Method registerClass15 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    ASTORE 3
+    POP
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
@@ -7219,10 +7223,6 @@ Method registerClass15 : V
     // Method descriptor: ([Ljava/lang/Class;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    ALOAD 3
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register

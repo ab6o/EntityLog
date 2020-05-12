@@ -53,25 +53,25 @@ Method deploy_0 : V
     ALOAD 2
     LDC (Integer) 1
     AALOAD
-    ASTORE 5
+    ASTORE 7
     LDC (String) "NORMAL"
     // Method descriptor: (Ljava/lang/String;)Lio/quarkus/runtime/LaunchMode;
     INVOKESTATIC io/quarkus/runtime/LaunchMode#valueOf
-    ASTORE 7
+    ASTORE 5
     ALOAD 2
     LDC (Integer) 0
     AALOAD
     CHECKCAST io/quarkus/runtime/ExecutorRecorder
     ALOAD 6
     CHECKCAST io/quarkus/runtime/ShutdownContext
-    ALOAD 5
-    CHECKCAST io/quarkus/runtime/ThreadPoolConfig
     ALOAD 7
+    CHECKCAST io/quarkus/runtime/ThreadPoolConfig
+    ALOAD 5
     // Method descriptor: (Lio/quarkus/runtime/ShutdownContext;Lio/quarkus/runtime/ThreadPoolConfig;Lio/quarkus/runtime/LaunchMode;)Ljava/util/concurrent/ExecutorService;
     INVOKEVIRTUAL io/quarkus/runtime/ExecutorRecorder#setupRunTime
     ASTORE 8
     ALOAD 1
-    LDC (String) "proxykey105"
+    LDC (String) "proxykey103"
     ALOAD 8
     // Method descriptor: (Ljava/lang/String;Ljava/lang/Object;)V
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#putValue

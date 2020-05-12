@@ -69,7 +69,7 @@ Method deploy_0 : V
     AALOAD
     ASTORE 6
     ALOAD 1
-    LDC (String) "proxykey101"
+    LDC (String) "proxykey105"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
     ASTORE 5
@@ -126,42 +126,42 @@ Method deploy_0 : V
     LDC (String) "proxykey127"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 14
+    ASTORE 12
     ALOAD 2
     LDC (Integer) 4
     AALOAD
-    ASTORE 13
+    ASTORE 14
     ALOAD 1
-    LDC (String) "proxykey116"
+    LDC (String) "proxykey112"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 12
+    ASTORE 13
     ALOAD 1
     LDC (String) "proxykey122"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 11
+    ASTORE 15
     LDC (String) "NORMAL"
     // Method descriptor: (Ljava/lang/String;)Lio/quarkus/runtime/LaunchMode;
     INVOKESTATIC io/quarkus/runtime/LaunchMode#valueOf
-    ASTORE 15
+    ASTORE 11
     ALOAD 2
     LDC (Integer) 0
     AALOAD
-    ASTORE 18
-    ALOAD 18
+    ASTORE 17
+    ALOAD 17
     CHECKCAST io/quarkus/vertx/http/runtime/VertxHttpRecorder
-    ALOAD 14
+    ALOAD 12
     CHECKCAST io/quarkus/arc/runtime/BeanContainer
     ACONST_NULL
-    ALOAD 13
+    ALOAD 14
     CHECKCAST java/util/List
-    ALOAD 12
+    ALOAD 13
     CHECKCAST io/quarkus/runtime/RuntimeValue
-    ALOAD 11
+    ALOAD 15
     CHECKCAST io/quarkus/runtime/RuntimeValue
     LDC (String) "/"
-    ALOAD 15
+    ALOAD 11
     // Method descriptor: (Lio/quarkus/arc/runtime/BeanContainer;Ljava/util/function/Consumer;Ljava/util/List;Lio/quarkus/runtime/RuntimeValue;Lio/quarkus/runtime/RuntimeValue;Ljava/lang/String;Lio/quarkus/runtime/LaunchMode;)V
     INVOKEVIRTUAL io/quarkus/vertx/http/runtime/VertxHttpRecorder#finalizeRouter
     // Field descriptor: Lio/quarkus/runtime/generated/RunTimeConfigRoot;
@@ -174,7 +174,7 @@ Method deploy_0 : V
     ALOAD 16
     AASTORE
     ALOAD 1
-    LDC (String) "proxykey116"
+    LDC (String) "proxykey112"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
     ASTORE 22
@@ -182,46 +182,46 @@ Method deploy_0 : V
     LDC (String) "io.quarkus.runtime.ShutdownContext"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 19
+    ASTORE 20
     ALOAD 2
     LDC (Integer) 5
     AALOAD
-    ASTORE 17
+    ASTORE 23
     LDC (String) "NORMAL"
     // Method descriptor: (Ljava/lang/String;)Lio/quarkus/runtime/LaunchMode;
     INVOKESTATIC io/quarkus/runtime/LaunchMode#valueOf
-    ASTORE 24
+    ASTORE 21
     LDC (Boolean) false
     // Method descriptor: (Z)Ljava/lang/Boolean;
     INVOKESTATIC java/lang/Boolean#valueOf
-    ASTORE 20
+    ASTORE 18
     LDC (Boolean) true
     // Method descriptor: (Z)Ljava/lang/Boolean;
     INVOKESTATIC java/lang/Boolean#valueOf
-    ASTORE 21
+    ASTORE 19
     ALOAD 1
-    LDC (String) "proxykey114"
+    LDC (String) "proxykey115"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 23
-    ALOAD 18
+    ASTORE 24
+    ALOAD 17
     CHECKCAST io/quarkus/vertx/http/runtime/VertxHttpRecorder
     ALOAD 22
     CHECKCAST io/quarkus/runtime/RuntimeValue
-    ALOAD 19
-    CHECKCAST io/quarkus/runtime/ShutdownContext
-    ALOAD 17
-    CHECKCAST io/quarkus/vertx/http/runtime/HttpConfiguration
-    ALOAD 24
     ALOAD 20
-    CHECKCAST java/lang/Boolean
-    // Method descriptor: ()Z
-    INVOKEVIRTUAL java/lang/Boolean#booleanValue
-    ALOAD 21
-    CHECKCAST java/lang/Boolean
-    // Method descriptor: ()Z
-    INVOKEVIRTUAL java/lang/Boolean#booleanValue
+    CHECKCAST io/quarkus/runtime/ShutdownContext
     ALOAD 23
+    CHECKCAST io/quarkus/vertx/http/runtime/HttpConfiguration
+    ALOAD 21
+    ALOAD 18
+    CHECKCAST java/lang/Boolean
+    // Method descriptor: ()Z
+    INVOKEVIRTUAL java/lang/Boolean#booleanValue
+    ALOAD 19
+    CHECKCAST java/lang/Boolean
+    // Method descriptor: ()Z
+    INVOKEVIRTUAL java/lang/Boolean#booleanValue
+    ALOAD 24
     CHECKCAST java/util/function/Supplier
     // Method descriptor: (Lio/quarkus/runtime/RuntimeValue;Lio/quarkus/runtime/ShutdownContext;Lio/quarkus/vertx/http/runtime/HttpConfiguration;Lio/quarkus/runtime/LaunchMode;ZZLjava/util/function/Supplier;)V
     INVOKEVIRTUAL io/quarkus/vertx/http/runtime/VertxHttpRecorder#startServer

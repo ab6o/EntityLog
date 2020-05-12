@@ -39,21 +39,21 @@ Method deploy_0 : V
     ALOAD 2
     LDC (Integer) 1
     AALOAD
-    ASTORE 5
+    ASTORE 4
     ALOAD 1
-    LDC (String) "proxykey32"
+    LDC (String) "proxykey33"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 4
-    ALOAD 5
-    CHECKCAST java/util/Collection
+    ASTORE 5
     ALOAD 4
+    CHECKCAST java/util/Collection
+    ALOAD 5
     // Method descriptor: (Ljava/lang/Object;)Z
     INVOKEINTERFACE java/util/Collection#add
     POP
     ALOAD 2
     LDC (Integer) 2
-    ALOAD 5
+    ALOAD 4
     AASTORE
     NEW io/quarkus/runtime/BlockingOperationRecorder
     DUP

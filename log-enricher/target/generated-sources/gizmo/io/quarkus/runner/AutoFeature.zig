@@ -27,7 +27,7 @@ Method registerClass7 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.util.TreeSet"
+    LDC (String) "java.util.LinkedHashSet"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -667,8 +667,8 @@ Method beforeAnalysis : V
     ALOAD 49
     // Method descriptor: (Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethod
-    ASTORE 51
-    ALOAD 51
+    ASTORE 50
+    ALOAD 50
     CHECKCAST java/lang/reflect/AccessibleObject
     LDC (Boolean) true
     // Method descriptor: (Z)V
@@ -680,14 +680,14 @@ Method beforeAnalysis : V
     ** label113
     LDC (Integer) 1
     ANEWARRAY java/lang/Object
-    ASTORE 50
-    ALOAD 50
+    ASTORE 51
+    ALOAD 51
     LDC (Integer) 0
     LDC (String) "messages"
     AASTORE
-    ALOAD 51
-    ALOAD 52
     ALOAD 50
+    ALOAD 52
+    ALOAD 51
     // Method descriptor: (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     INVOKEVIRTUAL java/lang/reflect/Method#invoke
     POP
@@ -828,7 +828,7 @@ Method registerClass28 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.apache.kafka.common.serialization.DoubleDeserializer"
+    LDC (String) "org.apache.kafka.common.serialization.LongDeserializer"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -879,7 +879,7 @@ Method registerClass16 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "io.debezium.demos.auditing.enricher.JsonObjectSerde"
+    LDC (String) "org.glassfish.json.JsonProviderImpl"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -890,11 +890,11 @@ Method registerClass16 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    ASTORE 3
+    POP
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    ASTORE 4
+    POP
     LDC (Integer) 1
     ANEWARRAY java/lang/Class
     ASTORE 1
@@ -908,14 +908,6 @@ Method registerClass16 : V
     ALOAD 2
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    ALOAD 3
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    LDC (Boolean) false
-    ALOAD 4
-    // Method descriptor: (Z[Ljava/lang/reflect/Field;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ** label3
     GOTO label4
@@ -993,7 +985,7 @@ Method registerClass36 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.apache.kafka.clients.producer.internals.DefaultPartitioner"
+    LDC (String) "org.apache.kafka.clients.consumer.RangeAssignor"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1044,7 +1036,7 @@ Method registerClass24 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.apache.kafka.common.serialization.ByteBufferSerializer"
+    LDC (String) "org.apache.kafka.common.serialization.StringSerializer"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1095,7 +1087,7 @@ Method registerClass12 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.apache.kafka.streams.processor.DefaultPartitionGrouper"
+    LDC (String) "org.apache.kafka.streams.errors.DefaultProductionExceptionHandler"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1201,7 +1193,7 @@ Method registerClass32 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.apache.kafka.common.serialization.IntegerDeserializer"
+    LDC (String) "org.apache.kafka.common.serialization.ByteBufferDeserializer"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1252,7 +1244,7 @@ Method registerClass20 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.apache.kafka.common.serialization.LongSerializer"
+    LDC (String) "org.apache.kafka.common.serialization.BytesSerializer"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1303,7 +1295,7 @@ Method registerClass2 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.util.HashSet"
+    LDC (String) "java.util.LinkedHashMap"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1405,7 +1397,7 @@ Method registerClass6 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.util.TreeMap"
+    LDC (String) "java.util.LinkedList"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1456,7 +1448,7 @@ Method registerClass29 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.apache.kafka.common.serialization.LongDeserializer"
+    LDC (String) "org.apache.kafka.common.serialization.BytesDeserializer"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1507,7 +1499,7 @@ Method registerClass17 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "io.quarkus.vertx.core.runtime.VertxLogDelegateFactory"
+    LDC (String) "org.apache.kafka.common.serialization.ShortSerializer"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1518,7 +1510,7 @@ Method registerClass17 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    ASTORE 3
+    POP
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
@@ -1534,10 +1526,6 @@ Method registerClass17 : V
     // Method descriptor: ([Ljava/lang/Class;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 2
-    CHECKCAST [Ljava/lang/reflect/Executable;
-    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
-    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
-    ALOAD 3
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
@@ -1617,7 +1605,7 @@ Method registerClass37 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.apache.kafka.clients.consumer.RangeAssignor"
+    LDC (String) "org.apache.kafka.clients.consumer.RoundRobinAssignor"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1668,7 +1656,7 @@ Method registerClass25 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.apache.kafka.common.serialization.StringSerializer"
+    LDC (String) "org.apache.kafka.common.serialization.FloatSerializer"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1719,7 +1707,7 @@ Method registerClass1 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.util.HashMap"
+    LDC (String) "io.netty.channel.socket.nio.NioServerSocketChannel"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1770,7 +1758,7 @@ Method registerClass13 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.apache.kafka.streams.errors.DefaultProductionExceptionHandler"
+    LDC (String) "io.debezium.demos.auditing.enricher.JsonObjectSerde"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1781,11 +1769,11 @@ Method registerClass13 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
+    ASTORE 3
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
-    POP
+    ASTORE 4
     LDC (Integer) 1
     ANEWARRAY java/lang/Class
     ASTORE 1
@@ -1799,6 +1787,14 @@ Method registerClass13 : V
     ALOAD 2
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 3
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    LDC (Boolean) false
+    ALOAD 4
+    // Method descriptor: (Z[Ljava/lang/reflect/Field;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ** label3
     GOTO label4
@@ -1876,7 +1872,7 @@ Method registerClass33 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.apache.kafka.common.serialization.ByteBufferDeserializer"
+    LDC (String) "org.apache.kafka.common.serialization.StringDeserializer"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1927,7 +1923,7 @@ Method registerClass21 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.apache.kafka.common.serialization.BytesSerializer"
+    LDC (String) "org.apache.kafka.common.serialization.ByteArraySerializer"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -1978,7 +1974,7 @@ Method registerClass5 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.util.LinkedHashSet"
+    LDC (String) "java.util.HashSet"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2139,7 +2135,7 @@ Method registerClass9 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "io.netty.channel.socket.nio.NioServerSocketChannel"
+    LDC (String) "java.util.TreeSet"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2190,7 +2186,7 @@ Method registerClass18 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.apache.kafka.common.serialization.ShortSerializer"
+    LDC (String) "org.apache.kafka.common.serialization.DoubleSerializer"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2241,7 +2237,7 @@ Method registerClass38 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.apache.kafka.clients.consumer.RoundRobinAssignor"
+    LDC (String) "org.apache.kafka.streams.errors.LogAndFailExceptionHandler"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2292,7 +2288,7 @@ Method registerClass26 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.apache.kafka.common.serialization.FloatSerializer"
+    LDC (String) "org.apache.kafka.common.serialization.ShortDeserializer"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2343,7 +2339,7 @@ Method registerClass0 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.util.ArrayList"
+    LDC (String) "io.netty.channel.socket.nio.NioSocketChannel"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2500,7 +2496,7 @@ Method registerClass34 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.apache.kafka.common.serialization.StringDeserializer"
+    LDC (String) "org.apache.kafka.common.serialization.FloatDeserializer"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2551,7 +2547,7 @@ Method registerClass22 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.apache.kafka.common.serialization.ByteArraySerializer"
+    LDC (String) "org.apache.kafka.common.serialization.IntegerSerializer"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2602,7 +2598,7 @@ Method registerClass4 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.util.LinkedHashMap"
+    LDC (String) "java.util.HashMap"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2653,7 +2649,7 @@ Method registerClass10 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.glassfish.json.JsonProviderImpl"
+    LDC (String) "org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2759,7 +2755,7 @@ Method registerClass30 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.apache.kafka.common.serialization.BytesDeserializer"
+    LDC (String) "org.apache.kafka.common.serialization.ByteArrayDeserializer"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2810,7 +2806,7 @@ Method registerClass8 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "io.netty.channel.socket.nio.NioSocketChannel"
+    LDC (String) "java.util.TreeMap"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2861,7 +2857,7 @@ Method registerClass19 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.apache.kafka.common.serialization.DoubleSerializer"
+    LDC (String) "org.apache.kafka.common.serialization.LongSerializer"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -2963,7 +2959,7 @@ Method registerClass27 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.apache.kafka.common.serialization.ShortDeserializer"
+    LDC (String) "org.apache.kafka.common.serialization.DoubleDeserializer"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -3014,7 +3010,7 @@ Method registerClass15 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.apache.kafka.streams.errors.LogAndFailExceptionHandler"
+    LDC (String) "io.quarkus.vertx.core.runtime.VertxLogDelegateFactory"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -3025,7 +3021,7 @@ Method registerClass15 : V
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Method;
     INVOKEVIRTUAL java/lang/Class#getDeclaredMethods
-    POP
+    ASTORE 3
     ALOAD 0
     // Method descriptor: ()[Ljava/lang/reflect/Field;
     INVOKEVIRTUAL java/lang/Class#getDeclaredFields
@@ -3041,6 +3037,10 @@ Method registerClass15 : V
     // Method descriptor: ([Ljava/lang/Class;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
     ALOAD 2
+    CHECKCAST [Ljava/lang/reflect/Executable;
+    // Method descriptor: ([Ljava/lang/reflect/Executable;)V
+    INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
+    ALOAD 3
     CHECKCAST [Ljava/lang/reflect/Executable;
     // Method descriptor: ([Ljava/lang/reflect/Executable;)V
     INVOKESTATIC org/graalvm/nativeimage/hosted/RuntimeReflection#register
@@ -3120,7 +3120,7 @@ Method registerClass35 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.apache.kafka.common.serialization.FloatDeserializer"
+    LDC (String) "org.apache.kafka.clients.producer.internals.DefaultPartitioner"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -3171,7 +3171,7 @@ Method registerClass23 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.apache.kafka.common.serialization.IntegerSerializer"
+    LDC (String) "org.apache.kafka.common.serialization.ByteBufferSerializer"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -3222,7 +3222,7 @@ Method registerClass11 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor"
+    LDC (String) "org.apache.kafka.streams.processor.DefaultPartitionGrouper"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -3328,7 +3328,7 @@ Method registerClass31 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "org.apache.kafka.common.serialization.ByteArrayDeserializer"
+    LDC (String) "org.apache.kafka.common.serialization.IntegerDeserializer"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0
@@ -3379,7 +3379,7 @@ Method registerClass3 : V
 ) {
     ** label1
     ** label2
-    LDC (String) "java.util.LinkedList"
+    LDC (String) "java.util.ArrayList"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Class;
     INVOKESTATIC java/lang/Class#forName
     ASTORE 0

@@ -388,14 +388,14 @@ Method deploy_0 : V
     ALOAD 2
     LDC (Integer) 37
     AALOAD
-    ASTORE 41
+    ASTORE 40
     ALOAD 2
     LDC (Integer) 2
     AALOAD
-    ASTORE 40
-    ALOAD 41
-    CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
+    ASTORE 41
     ALOAD 40
+    CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
+    ALOAD 41
     CHECKCAST java/util/Map
     // Method descriptor: (Ljava/util/Map;)V
     INVOKEVIRTUAL org/jboss/resteasy/core/ResteasyDeploymentImpl#setLanguageExtensions
@@ -403,7 +403,7 @@ Method deploy_0 : V
     LDC (Integer) 4
     AALOAD
     ASTORE 42
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     ALOAD 42
     CHECKCAST java/util/List
@@ -413,7 +413,7 @@ Method deploy_0 : V
     LDC (Integer) 6
     AALOAD
     ASTORE 43
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     ALOAD 43
     CHECKCAST java/util/Map
@@ -423,7 +423,7 @@ Method deploy_0 : V
     // Method descriptor: (Z)Ljava/lang/Boolean;
     INVOKESTATIC java/lang/Boolean#valueOf
     ASTORE 44
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     ALOAD 44
     CHECKCAST java/lang/Boolean
@@ -435,7 +435,7 @@ Method deploy_0 : V
     LDC (Integer) 8
     AALOAD
     ASTORE 45
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     ALOAD 45
     CHECKCAST java/util/Map
@@ -445,7 +445,7 @@ Method deploy_0 : V
     // Method descriptor: (Z)Ljava/lang/Boolean;
     INVOKESTATIC java/lang/Boolean#valueOf
     ASTORE 46
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     ALOAD 46
     CHECKCAST java/lang/Boolean
@@ -457,7 +457,7 @@ Method deploy_0 : V
     // Method descriptor: (Z)Ljava/lang/Boolean;
     INVOKESTATIC java/lang/Boolean#valueOf
     ASTORE 47
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     ALOAD 47
     CHECKCAST java/lang/Boolean
@@ -469,7 +469,7 @@ Method deploy_0 : V
     LDC (Integer) 10
     AALOAD
     ASTORE 48
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     ALOAD 48
     CHECKCAST java/util/List
@@ -479,7 +479,7 @@ Method deploy_0 : V
     // Method descriptor: (Z)Ljava/lang/Boolean;
     INVOKESTATIC java/lang/Boolean#valueOf
     ASTORE 49
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     ALOAD 49
     CHECKCAST java/lang/Boolean
@@ -491,7 +491,7 @@ Method deploy_0 : V
     LDC (Integer) 12
     AALOAD
     ASTORE 50
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     ALOAD 50
     CHECKCAST java/util/List
@@ -501,7 +501,7 @@ Method deploy_0 : V
     LDC (Integer) 14
     AALOAD
     ASTORE 51
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     ALOAD 51
     CHECKCAST java/util/List
@@ -511,7 +511,7 @@ Method deploy_0 : V
     LDC (Integer) 16
     AALOAD
     ASTORE 52
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     ALOAD 52
     CHECKCAST java/util/List
@@ -521,7 +521,7 @@ Method deploy_0 : V
     // Method descriptor: (I)Ljava/lang/Integer;
     INVOKESTATIC java/lang/Integer#valueOf
     ASTORE 53
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     ALOAD 53
     CHECKCAST java/lang/Integer
@@ -533,7 +533,7 @@ Method deploy_0 : V
     // Method descriptor: (I)Ljava/lang/Integer;
     INVOKESTATIC java/lang/Integer#valueOf
     ASTORE 54
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     ALOAD 54
     CHECKCAST java/lang/Integer
@@ -541,7 +541,7 @@ Method deploy_0 : V
     INVOKEVIRTUAL java/lang/Integer#intValue
     // Method descriptor: (I)V
     INVOKEVIRTUAL org/jboss/resteasy/core/ResteasyDeploymentImpl#setAsyncJobServiceThreadPoolSize
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     LDC (String) "/asynch/jobs"
     // Method descriptor: (Ljava/lang/String;)V
@@ -550,7 +550,7 @@ Method deploy_0 : V
     LDC (Integer) 18
     AALOAD
     ASTORE 55
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     ALOAD 55
     CHECKCAST java/util/Map
@@ -560,7 +560,7 @@ Method deploy_0 : V
     // Method descriptor: (Z)Ljava/lang/Boolean;
     INVOKESTATIC java/lang/Boolean#valueOf
     ASTORE 56
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     ALOAD 56
     CHECKCAST java/lang/Boolean
@@ -572,7 +572,7 @@ Method deploy_0 : V
     // Method descriptor: (Z)Ljava/lang/Boolean;
     INVOKESTATIC java/lang/Boolean#valueOf
     ASTORE 57
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     ALOAD 57
     CHECKCAST java/lang/Boolean
@@ -584,13 +584,13 @@ Method deploy_0 : V
     LDC (Integer) 20
     AALOAD
     ASTORE 58
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     ALOAD 58
     CHECKCAST java/util/List
     // Method descriptor: (Ljava/util/List;)V
     INVOKEVIRTUAL org/jboss/resteasy/core/ResteasyDeploymentImpl#setProviderClasses
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     LDC (String) "io.quarkus.resteasy.common.runtime.QuarkusInjectorFactory"
     // Method descriptor: (Ljava/lang/String;)V
@@ -599,13 +599,13 @@ Method deploy_0 : V
     LDC (Integer) 22
     AALOAD
     ASTORE 59
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     ALOAD 59
     CHECKCAST java/util/List
     // Method descriptor: (Ljava/util/List;)V
     INVOKEVIRTUAL org/jboss/resteasy/core/ResteasyDeploymentImpl#setResources
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     LDC (Long) 300000
     // Method descriptor: (J)V
@@ -614,7 +614,7 @@ Method deploy_0 : V
     LDC (Integer) 24
     AALOAD
     ASTORE 60
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     ALOAD 60
     CHECKCAST java/util/List
@@ -624,7 +624,7 @@ Method deploy_0 : V
     LDC (Integer) 26
     AALOAD
     ASTORE 61
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     ALOAD 61
     CHECKCAST java/util/Map
@@ -634,7 +634,7 @@ Method deploy_0 : V
     LDC (Integer) 28
     AALOAD
     ASTORE 62
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     ALOAD 62
     CHECKCAST java/util/List
@@ -644,7 +644,7 @@ Method deploy_0 : V
     LDC (Integer) 30
     AALOAD
     ASTORE 63
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     ALOAD 63
     CHECKCAST java/util/List
@@ -654,7 +654,7 @@ Method deploy_0 : V
     LDC (Integer) 32
     AALOAD
     ASTORE 64
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     ALOAD 64
     CHECKCAST java/util/List
@@ -664,7 +664,7 @@ Method deploy_0 : V
     LDC (Integer) 34
     AALOAD
     ASTORE 65
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     ALOAD 65
     CHECKCAST java/util/List
@@ -674,7 +674,7 @@ Method deploy_0 : V
     // Method descriptor: (Z)Ljava/lang/Boolean;
     INVOKESTATIC java/lang/Boolean#valueOf
     ASTORE 66
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     ALOAD 66
     CHECKCAST java/lang/Boolean
@@ -686,7 +686,7 @@ Method deploy_0 : V
     LDC (Integer) 36
     AALOAD
     ASTORE 67
-    ALOAD 41
+    ALOAD 40
     CHECKCAST org/jboss/resteasy/core/ResteasyDeploymentImpl
     ALOAD 67
     CHECKCAST java/util/List
@@ -694,7 +694,7 @@ Method deploy_0 : V
     INVOKEVIRTUAL org/jboss/resteasy/core/ResteasyDeploymentImpl#setProviders
     ALOAD 2
     LDC (Integer) 38
-    ALOAD 41
+    ALOAD 40
     AASTORE
     NEW java/util/HashSet
     DUP
@@ -737,19 +737,19 @@ Method deploy_0 : V
     ALOAD 2
     LDC (Integer) 38
     AALOAD
-    ASTORE 72
+    ASTORE 71
     ALOAD 2
     LDC (Integer) 40
     AALOAD
-    ASTORE 71
+    ASTORE 72
     ALOAD 2
     LDC (Integer) 0
     AALOAD
     CHECKCAST io/quarkus/resteasy/runtime/standalone/ResteasyStandaloneRecorder
-    ALOAD 72
+    ALOAD 71
     CHECKCAST org/jboss/resteasy/spi/ResteasyDeployment
     LDC (String) "/"
-    ALOAD 71
+    ALOAD 72
     CHECKCAST java/util/Set
     // Method descriptor: (Lorg/jboss/resteasy/spi/ResteasyDeployment;Ljava/lang/String;Ljava/util/Set;)V
     INVOKEVIRTUAL io/quarkus/resteasy/runtime/standalone/ResteasyStandaloneRecorder#staticInit

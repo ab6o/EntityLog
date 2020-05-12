@@ -37,35 +37,35 @@ Method deploy_0 : V
     ALOAD 3
     AASTORE
     ALOAD 1
-    LDC (String) "proxykey163"
+    LDC (String) "proxykey161"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 6
+    ASTORE 5
     ALOAD 1
     LDC (String) "io.quarkus.runtime.ShutdownContext"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 7
+    ASTORE 4
     ALOAD 1
     LDC (String) "proxykey174"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 4
+    ASTORE 6
     LDC (Boolean) false
     // Method descriptor: (Z)Ljava/lang/Boolean;
     INVOKESTATIC java/lang/Boolean#valueOf
-    ASTORE 5
+    ASTORE 7
     ALOAD 2
     LDC (Integer) 0
     AALOAD
     CHECKCAST io/quarkus/resteasy/runtime/standalone/ResteasyStandaloneRecorder
-    ALOAD 6
-    CHECKCAST io/quarkus/runtime/RuntimeValue
-    ALOAD 7
-    CHECKCAST io/quarkus/runtime/ShutdownContext
-    ALOAD 4
-    CHECKCAST io/quarkus/arc/runtime/BeanContainer
     ALOAD 5
+    CHECKCAST io/quarkus/runtime/RuntimeValue
+    ALOAD 4
+    CHECKCAST io/quarkus/runtime/ShutdownContext
+    ALOAD 6
+    CHECKCAST io/quarkus/arc/runtime/BeanContainer
+    ALOAD 7
     CHECKCAST java/lang/Boolean
     // Method descriptor: ()Z
     INVOKEVIRTUAL java/lang/Boolean#booleanValue

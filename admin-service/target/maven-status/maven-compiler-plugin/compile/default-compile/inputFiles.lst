@@ -1,8 +1,8 @@
-/Users/anandhi/Work/debezium-examples/auditlog/admin-service/src/main/java/io/debezium/demos/auditing/admin/VegetableData.java
-/Users/anandhi/Work/debezium-examples/auditlog/admin-service/src/main/java/io/debezium/demos/auditing/admin/SourceData.java
-/Users/anandhi/Work/debezium-examples/auditlog/admin-service/src/main/java/io/debezium/demos/auditing/admin/AuditData.java
-/Users/anandhi/Work/debezium-examples/auditlog/admin-service/src/main/java/io/debezium/demos/auditing/admin/TransactionEvent.java
-/Users/anandhi/Work/debezium-examples/auditlog/admin-service/src/main/java/io/debezium/demos/auditing/admin/service/AdminService.java
-/Users/anandhi/Work/debezium-examples/auditlog/admin-service/src/main/java/io/debezium/demos/auditing/admin/wih/SendTransactionEventWIHandler.java
-/Users/anandhi/Work/debezium-examples/auditlog/admin-service/src/main/java/io/debezium/demos/auditing/admin/VegetableEvent.java
-/Users/anandhi/Work/debezium-examples/auditlog/admin-service/src/main/java/io/debezium/demos/auditing/admin/TransactionData.java
+/Users/anandhi/Work/EntityLog/admin-service/src/main/java/io/debezium/demos/auditing/admin/VegetableData.java
+/Users/anandhi/Work/EntityLog/admin-service/src/main/java/io/debezium/demos/auditing/admin/service/AdminService.java
+/Users/anandhi/Work/EntityLog/admin-service/src/main/java/io/debezium/demos/auditing/admin/AuditData.java
+/Users/anandhi/Work/EntityLog/admin-service/src/main/java/io/debezium/demos/auditing/admin/VegetableEvent.java
+/Users/anandhi/Work/EntityLog/admin-service/src/main/java/io/debezium/demos/auditing/admin/TransactionData.java
+/Users/anandhi/Work/EntityLog/admin-service/src/main/java/io/debezium/demos/auditing/admin/TransactionEvent.java
+/Users/anandhi/Work/EntityLog/admin-service/src/main/java/io/debezium/demos/auditing/admin/wih/SendTransactionEventWIHandler.java
+/Users/anandhi/Work/EntityLog/admin-service/src/main/java/io/debezium/demos/auditing/admin/SourceData.java

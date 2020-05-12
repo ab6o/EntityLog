@@ -94,44 +94,44 @@ Method deploy_0 : V
     LDC (String) "io.quarkus.runtime.ShutdownContext"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 12
+    ASTORE 13
     ALOAD 1
     LDC (String) "proxykey16"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 10
+    ASTORE 8
     ALOAD 1
     LDC (String) "proxykey80"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 8
+    ASTORE 9
     ALOAD 2
     LDC (Integer) 2
     AALOAD
-    ASTORE 9
+    ASTORE 11
     ALOAD 2
     LDC (Integer) 3
     AALOAD
-    ASTORE 13
+    ASTORE 12
     ALOAD 2
     LDC (Integer) 4
     AALOAD
-    ASTORE 11
+    ASTORE 10
     ALOAD 2
     LDC (Integer) 0
     AALOAD
     CHECKCAST io/quarkus/undertow/runtime/UndertowDeploymentRecorder
-    ALOAD 12
-    CHECKCAST io/quarkus/runtime/ShutdownContext
-    ALOAD 10
-    CHECKCAST java/util/concurrent/ExecutorService
-    ALOAD 8
-    CHECKCAST io/undertow/servlet/api/DeploymentManager
-    ALOAD 9
-    CHECKCAST java/util/List
     ALOAD 13
-    CHECKCAST io/quarkus/vertx/http/runtime/HttpConfiguration
+    CHECKCAST io/quarkus/runtime/ShutdownContext
+    ALOAD 8
+    CHECKCAST java/util/concurrent/ExecutorService
+    ALOAD 9
+    CHECKCAST io/undertow/servlet/api/DeploymentManager
     ALOAD 11
+    CHECKCAST java/util/List
+    ALOAD 12
+    CHECKCAST io/quarkus/vertx/http/runtime/HttpConfiguration
+    ALOAD 10
     CHECKCAST io/quarkus/undertow/runtime/ServletRuntimeConfig
     // Method descriptor: (Lio/quarkus/runtime/ShutdownContext;Ljava/util/concurrent/ExecutorService;Lio/undertow/servlet/api/DeploymentManager;Ljava/util/List;Lio/quarkus/vertx/http/runtime/HttpConfiguration;Lio/quarkus/undertow/runtime/ServletRuntimeConfig;)Lio/vertx/core/Handler;
     INVOKEVIRTUAL io/quarkus/undertow/runtime/UndertowDeploymentRecorder#startUndertow

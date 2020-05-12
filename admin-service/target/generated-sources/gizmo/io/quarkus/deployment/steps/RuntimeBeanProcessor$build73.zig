@@ -58,25 +58,25 @@ Method deploy_0 : V
     ALOAD 2
     LDC (Integer) 1
     AALOAD
-    ASTORE 5
+    ASTORE 4
     ALOAD 1
-    LDC (String) "proxykey154"
+    LDC (String) "proxykey150"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 4
-    ALOAD 5
+    ASTORE 5
+    ALOAD 4
     CHECKCAST java/util/Map
     LDC (String) "io_netty_channel_EventLoopGroup_2345333c423cbc78a3a59111ff8200c149f1ee62"
-    ALOAD 4
+    ALOAD 5
     // Method descriptor: (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     INVOKEINTERFACE java/util/Map#put
     POP
     ALOAD 1
-    LDC (String) "proxykey156"
+    LDC (String) "proxykey153"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
     ASTORE 6
-    ALOAD 5
+    ALOAD 4
     CHECKCAST java/util/Map
     LDC (String) "io_netty_channel_EventLoopGroup_b33f6aa17ac3a5d9763bb57c8512f8fafd11580e"
     ALOAD 6
@@ -85,7 +85,7 @@ Method deploy_0 : V
     POP
     ALOAD 2
     LDC (Integer) 2
-    ALOAD 5
+    ALOAD 4
     AASTORE
     NEW io/quarkus/arc/runtime/ArcRecorder
     DUP

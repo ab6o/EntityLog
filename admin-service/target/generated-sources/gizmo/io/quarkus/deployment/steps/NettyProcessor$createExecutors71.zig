@@ -54,7 +54,7 @@ Method deploy_0 : V
     INVOKEVIRTUAL io/quarkus/netty/runtime/NettyRecorder#createEventLoop
     ASTORE 5
     ALOAD 1
-    LDC (String) "proxykey154"
+    LDC (String) "proxykey150"
     ALOAD 5
     // Method descriptor: (Ljava/lang/String;Ljava/lang/Object;)V
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#putValue
@@ -72,7 +72,7 @@ Method deploy_0 : V
     INVOKEVIRTUAL io/quarkus/netty/runtime/NettyRecorder#createEventLoop
     ASTORE 8
     ALOAD 1
-    LDC (String) "proxykey156"
+    LDC (String) "proxykey153"
     ALOAD 8
     // Method descriptor: (Ljava/lang/String;Ljava/lang/Object;)V
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#putValue

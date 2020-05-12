@@ -84,18 +84,18 @@ Method deploy_0 : V
     LDC (String) "proxykey127"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 9
+    ASTORE 10
     ALOAD 2
     LDC (Integer) 4
     AALOAD
-    ASTORE 10
+    ASTORE 9
     ALOAD 2
     LDC (Integer) 0
     AALOAD
     CHECKCAST io/quarkus/resteasy/common/runtime/ResteasyInjectorFactoryRecorder
-    ALOAD 9
-    CHECKCAST io/quarkus/arc/runtime/BeanContainer
     ALOAD 10
+    CHECKCAST io/quarkus/arc/runtime/BeanContainer
+    ALOAD 9
     CHECKCAST java/util/List
     // Method descriptor: (Lio/quarkus/arc/runtime/BeanContainer;Ljava/util/List;)Lio/quarkus/runtime/RuntimeValue;
     INVOKEVIRTUAL io/quarkus/resteasy/common/runtime/ResteasyInjectorFactoryRecorder#setup

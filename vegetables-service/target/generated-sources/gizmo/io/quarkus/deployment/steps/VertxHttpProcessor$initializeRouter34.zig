@@ -37,10 +37,10 @@ Method deploy_0 : V
     ALOAD 3
     AASTORE
     ALOAD 1
-    LDC (String) "proxykey26"
+    LDC (String) "proxykey31"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 6
+    ASTORE 5
     LDC (String) "NORMAL"
     // Method descriptor: (Ljava/lang/String;)Lio/quarkus/runtime/LaunchMode;
     INVOKESTATIC io/quarkus/runtime/LaunchMode#valueOf
@@ -49,15 +49,15 @@ Method deploy_0 : V
     LDC (String) "io.quarkus.runtime.ShutdownContext"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 5
+    ASTORE 6
     ALOAD 2
     LDC (Integer) 0
     AALOAD
     CHECKCAST io/quarkus/vertx/http/runtime/VertxHttpRecorder
-    ALOAD 6
+    ALOAD 5
     CHECKCAST io/quarkus/runtime/RuntimeValue
     ALOAD 4
-    ALOAD 5
+    ALOAD 6
     CHECKCAST io/quarkus/runtime/ShutdownContext
     // Method descriptor: (Lio/quarkus/runtime/RuntimeValue;Lio/quarkus/runtime/LaunchMode;Lio/quarkus/runtime/ShutdownContext;)Lio/quarkus/runtime/RuntimeValue;
     INVOKEVIRTUAL io/quarkus/vertx/http/runtime/VertxHttpRecorder#initializeRouter
