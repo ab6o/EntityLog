@@ -9,6 +9,5 @@
   <modules>
     <module>vegetables-service</module>
     <module>log-enricher</module>
-    <module>admin-service</module>
   </modules>
 </project>

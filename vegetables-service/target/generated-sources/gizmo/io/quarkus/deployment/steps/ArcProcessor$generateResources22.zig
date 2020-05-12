@@ -63,8 +63,8 @@ Method deploy_0 : V
     ALOAD 2
     LDC (Integer) 0
     AALOAD
-    ASTORE 17
-    ALOAD 17
+    ASTORE 18
+    ALOAD 18
     CHECKCAST io/quarkus/arc/runtime/ArcRecorder
     ALOAD 4
     CHECKCAST io/quarkus/runtime/ShutdownContext
@@ -88,15 +88,15 @@ Method deploy_0 : V
     ALOAD 2
     LDC (Integer) 1
     AALOAD
-    ASTORE 7
+    ASTORE 8
     ALOAD 1
     LDC (String) "proxykey40"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 8
-    ALOAD 7
-    CHECKCAST java/util/Collection
+    ASTORE 7
     ALOAD 8
+    CHECKCAST java/util/Collection
+    ALOAD 7
     // Method descriptor: (Ljava/lang/Object;)Z
     INVOKEINTERFACE java/util/Collection#add
     POP
@@ -105,7 +105,7 @@ Method deploy_0 : V
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
     ASTORE 9
-    ALOAD 7
+    ALOAD 8
     CHECKCAST java/util/Collection
     ALOAD 9
     // Method descriptor: (Ljava/lang/Object;)Z
@@ -116,7 +116,7 @@ Method deploy_0 : V
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
     ASTORE 10
-    ALOAD 7
+    ALOAD 8
     CHECKCAST java/util/Collection
     ALOAD 10
     // Method descriptor: (Ljava/lang/Object;)Z
@@ -127,7 +127,7 @@ Method deploy_0 : V
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
     ASTORE 11
-    ALOAD 7
+    ALOAD 8
     CHECKCAST java/util/Collection
     ALOAD 11
     // Method descriptor: (Ljava/lang/Object;)Z
@@ -138,7 +138,7 @@ Method deploy_0 : V
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
     ASTORE 12
-    ALOAD 7
+    ALOAD 8
     CHECKCAST java/util/Collection
     ALOAD 12
     // Method descriptor: (Ljava/lang/Object;)Z
@@ -146,7 +146,7 @@ Method deploy_0 : V
     POP
     ALOAD 2
     LDC (Integer) 2
-    ALOAD 7
+    ALOAD 8
     AASTORE
     NEW java/util/HashSet
     DUP
@@ -467,18 +467,18 @@ Method deploy_0 : V
     ALOAD 2
     LDC (Integer) 2
     AALOAD
-    ASTORE 18
+    ASTORE 16
     ALOAD 2
     LDC (Integer) 4
     AALOAD
-    ASTORE 16
-    ALOAD 17
+    ASTORE 17
+    ALOAD 18
     CHECKCAST io/quarkus/arc/runtime/ArcRecorder
     ALOAD 15
     CHECKCAST io/quarkus/arc/ArcContainer
-    ALOAD 18
-    CHECKCAST java/util/List
     ALOAD 16
+    CHECKCAST java/util/List
+    ALOAD 17
     CHECKCAST java/util/Collection
     // Method descriptor: (Lio/quarkus/arc/ArcContainer;Ljava/util/List;Ljava/util/Collection;)Lio/quarkus/arc/runtime/BeanContainer;
     INVOKEVIRTUAL io/quarkus/arc/runtime/ArcRecorder#initBeanContainer

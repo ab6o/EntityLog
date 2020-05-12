@@ -61,14 +61,14 @@ Method deploy_0 : V
     ASTORE 4
     ALOAD 4
     CHECKCAST io/quarkus/runtime/SubstrateRuntimePropertiesRecorder
-    LDC (String) "java.util.logging.manager"
-    LDC (String) "org.jboss.logmanager.LogManager"
+    LDC (String) "sun.nio.ch.maxUpdateArraySize"
+    LDC (String) "100"
     // Method descriptor: (Ljava/lang/String;Ljava/lang/String;)V
     INVOKEVIRTUAL io/quarkus/runtime/SubstrateRuntimePropertiesRecorder#setInStaticInit
     ALOAD 4
     CHECKCAST io/quarkus/runtime/SubstrateRuntimePropertiesRecorder
-    LDC (String) "sun.nio.ch.maxUpdateArraySize"
-    LDC (String) "100"
+    LDC (String) "java.util.logging.manager"
+    LDC (String) "org.jboss.logmanager.LogManager"
     // Method descriptor: (Ljava/lang/String;Ljava/lang/String;)V
     INVOKEVIRTUAL io/quarkus/runtime/SubstrateRuntimePropertiesRecorder#setInStaticInit
     ALOAD 4

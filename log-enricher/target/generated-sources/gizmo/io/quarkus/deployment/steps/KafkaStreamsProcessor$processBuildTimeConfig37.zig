@@ -137,7 +137,7 @@ Method deploy_0 : V
     INVOKEVIRTUAL io/quarkus/kafka/streams/runtime/KafkaStreamsRecorder#configure
     ASTORE 7
     ALOAD 1
-    LDC (String) "proxykey108"
+    LDC (String) "proxykey105"
     ALOAD 7
     // Method descriptor: (Ljava/lang/String;Ljava/lang/Object;)V
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#putValue

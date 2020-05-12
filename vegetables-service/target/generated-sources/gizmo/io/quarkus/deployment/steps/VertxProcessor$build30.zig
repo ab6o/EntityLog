@@ -71,10 +71,10 @@ Method deploy_0 : V
     ALOAD 7
     AASTORE
     ALOAD 1
-    LDC (String) "proxykey65"
+    LDC (String) "proxykey66"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 9
+    ASTORE 12
     ALOAD 2
     LDC (Integer) 2
     AALOAD
@@ -82,41 +82,41 @@ Method deploy_0 : V
     LDC (String) "NORMAL"
     // Method descriptor: (Ljava/lang/String;)Lio/quarkus/runtime/LaunchMode;
     INVOKESTATIC io/quarkus/runtime/LaunchMode#valueOf
-    ASTORE 8
+    ASTORE 9
     ALOAD 1
     LDC (String) "io.quarkus.runtime.ShutdownContext"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 11
+    ASTORE 8
     ALOAD 2
     LDC (Integer) 4
     AALOAD
-    ASTORE 12
+    ASTORE 11
     ALOAD 2
     LDC (Integer) 0
     AALOAD
-    ASTORE 13
-    ALOAD 13
+    ASTORE 14
+    ALOAD 14
     CHECKCAST io/quarkus/vertx/runtime/VertxRecorder
-    ALOAD 9
+    ALOAD 12
     CHECKCAST java/util/function/Supplier
     ALOAD 10
     CHECKCAST java/util/Map
+    ALOAD 9
     ALOAD 8
-    ALOAD 11
     CHECKCAST io/quarkus/runtime/ShutdownContext
-    ALOAD 12
+    ALOAD 11
     CHECKCAST java/util/Map
     // Method descriptor: (Ljava/util/function/Supplier;Ljava/util/Map;Lio/quarkus/runtime/LaunchMode;Lio/quarkus/runtime/ShutdownContext;Ljava/util/Map;)V
     INVOKEVIRTUAL io/quarkus/vertx/runtime/VertxRecorder#configureVertx
     ALOAD 1
-    LDC (String) "proxykey65"
+    LDC (String) "proxykey66"
     // Method descriptor: (Ljava/lang/String;)Ljava/lang/Object;
     INVOKEVIRTUAL io/quarkus/runtime/StartupContext#getValue
-    ASTORE 14
-    ALOAD 13
-    CHECKCAST io/quarkus/vertx/runtime/VertxRecorder
+    ASTORE 13
     ALOAD 14
+    CHECKCAST io/quarkus/vertx/runtime/VertxRecorder
+    ALOAD 13
     CHECKCAST java/util/function/Supplier
     // Method descriptor: (Ljava/util/function/Supplier;)Lio/quarkus/runtime/RuntimeValue;
     INVOKEVIRTUAL io/quarkus/vertx/runtime/VertxRecorder#forceStart
