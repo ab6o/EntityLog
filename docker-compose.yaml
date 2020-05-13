@@ -15,7 +15,7 @@ services:
     environment:
      - ZOOKEEPER_CONNECT=zookeeper:2181
      # For local development of auditlog-enricher
-     # - ADVERTISED_HOST_NAME=192.168.1.6
+#     - ADVERTISED_HOST_NAME=192.168.0.103
      - KAFKA_GROUP_MIN_SESSION_TIMEOUT_MS=250
   order-management-db:
     image: debezium/example-postgres:${DEBEZIUM_VERSION}
